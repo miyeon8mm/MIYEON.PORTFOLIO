@@ -1,0 +1,405 @@
+
+#wrap{height:400vh;}
+.stage{
+    height:100vh;
+    position:relative;
+    overflow: hidden;
+}
+.cont_01{
+    position:absolute;
+    inset:0;
+    z-index: 1;
+    background-image:url(/culture_poter/img/main_poster.png) ;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.cont_01 .logo {
+    position: absolute;
+    top:50px;
+    right: 50px;
+    height: 18px;
+    opacity: 0.8;
+    filter: brightness(0);
+  }
+
+.cont_01 .intro{
+    width:100%;
+    height:100vh;
+    display:block;
+    filter: drop-shadow(0 8px 18px rgba(0,0,0,.55));
+    transform-origin: 50% 50%;
+}
+
+.cont{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    left:0; 
+    bottom:0;
+    border-radius:26px 26px 0 0;
+    will-change:transform;
+}
+#cont_02{z-index:2; background-color: #F6F4EF;}
+#cont_03{z-index:3; background-color:#111110;}
+#cont_04{z-index:4; background-color: #F6F4EF;}
+
+/* section2 */
+.inner_01{color:#ffffff; width:100%; }
+.best-panel{
+    display:none;
+    /* width:100%; */
+    height:100vh;
+}
+.best-panel.is-active{
+    display:block;
+    width:100%;
+}
+.title{text-align: center;}
+.title h2{margin-top:100px; font-size:36px;  font-family: 'Aggravo';}
+.title ul{
+    /* width:60%; */
+    display:flex;
+    justify-content: center;
+    font-size:25px;
+    margin:0 auto;
+    margin:50px 0;
+}
+.title ul li{opacity:0.5; cursor:pointer; padding:0 56px 0 56px; font-family: 'Aggravo'; font-weight:500;}
+.ct-list_01 > li{border-right:3.5px solid#000000;}
+.title ul li:nth-child(4){border:none;}
+.title .is-active {
+    opacity: 1;
+    font-weight: 700;
+}
+#best{color:#000;}
+
+.swiper{
+    width:min(1200px, 92vw);
+    height:500px;
+    overflow:hidden;
+    position: relative;
+}
+.swiper .swiper-slide{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.swiper .swiper-slide a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+  
+.swiper .swiper-slide img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transform: scale(.78);
+    opacity:.6;
+    transition: transform .3s ease, opacity .3s ease;
+}
+  
+.swiper .swiper-slide-active img{
+    transform: scale(1);
+    opacity:1;
+}
+
+#cont_02 .swiper-pagination{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    z-index: 20;
+    width: auto;
+   
+  }
+  
+  #cont_02 .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: .35;
+    background: #000000;
+    margin: 0 6px;
+  }
+  
+  #cont_02 .swiper-pagination-bullet-active{
+    opacity: 1;
+    transform: scale(1);
+  }
+.swiper-button-prev,
+.swiper-button-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color:#020202;
+  border:none;
+  background: transparent;
+}
+
+/* section3 */
+#free_title > p{
+    font-family: 'Aggravo';
+    font-weight:500;
+    font-size:20px;
+    margin:10px 0 50px 0;
+}
+
+.ct-list_02 > li{border-right:1px solid#ffffff;}
+#btnMore{
+    position: absolute;
+    top:89%;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: inherit;
+    border:none;
+    font-size:20px;
+    color:#fff;
+  }
+
+.card_list{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap:20px;
+    width:100%;
+    padding:0 40px;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .25s;
+}
+.card_list.is-active{opacity:1; visibility: visible; pointer-events: auto;}
+
+.card-wrap{
+    position:relative;
+    display:inline-block;
+}
+.card-wrap a{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.card-wrap a img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+
+.card-wrap::before,
+.card-wrap::after{
+    content:"";
+    position:absolute;
+    pointer-events:none;
+    width:30px;
+    height:30px;
+    transition: width.55s ease, height.55s ease;
+}
+  
+.card-wrap::before{
+    top:-8px;
+    left:-8px;
+    border-top:2px solid rgba(246,244,239,.85);
+    border-left:2px solid rgba(246,244,239,.85);
+}
+  
+.card-wrap::after{
+    right:-8px;
+    bottom:-8px;
+    border-right:2px solid rgba(246,244,239,.85);
+    border-bottom:2px solid rgba(246,244,239,.85);
+}
+
+.card-wrap.is-draw::before,
+.card-wrap.is-draw::after{
+    width:calc(100% + 13px);
+    height:calc(100% + 13px);
+}
+
+  /* section4 */
+.cont_04_title{
+    font-size:36px;
+    font-family: 'Aggravo';
+    font-weight:700;
+    text-align: center;
+    padding:100px 0;
+    color:#000;
+}
+.reserve{
+    width:70%;
+    margin:0 auto;
+}
+.reserve > li{
+    height:274px;
+    border-radius:65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Paperozi';
+    font-weight:700;
+}
+.reserve > li:nth-child(1){
+    background-image: url(/culture_poter/img/cont04/jeju_museum.png);
+    margin-bottom:30px;
+}
+.reserve > li:nth-child(2){
+    background-image: url(/culture_poter/img/cont04/ddp1.png);
+    margin-bottom:30px;
+}
+.reserve > li:nth-child(3){
+    background-image: url(/culture_poter/img/cont04/museum.png);
+}
+.reserve_cont{
+    width:100%;
+    height:100%;
+    display:flex;
+    position: relative;
+    color:#fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+.reserve_cont01{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+    line-height:2;
+}
+.reserve_cont01 h4{font-size:42px;}
+.reserve_cont01 span,
+.reserve_cont01 p{font-size:27px;}
+.arrow{
+    position:absolute; 
+    top:50%; 
+    right:100px; 
+    transform:translateY(-45%);
+    line-height:3.5; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reserve > li:nth-child(3){display:none;}
+/* section5 */
+.cont_05{
+    width:100%;
+    height:550px;
+    background-image: url(/culture_poter/img/cont_05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    position:relative;
+   
+}
+
+.cont_05 > h3{ 
+    position:absolute;
+    left:50%; top:50%; 
+    transform:translate(-50%, -50%);
+    color:#F5F5F2;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25);
+    letter-spacing: 0.2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-size:28px;
+    font-weight:700;
+}
+/* footer */
+footer{
+    width:100%;
+    height:280px;
+    background-color: #2A2420;
+    padding:50px 72px;
+    color:#EDEAE6;
+    line-height:2;
+    font-family: "Noto Sans", sans-serif;
+    font-weight:700;
+    font-size:15px;
+}
+footer ul{display:flex; justify-content: space-between;}
+footer ul > li img{margin:0 20px 20px 0}
+footer .logo_f{width:100px; opacity: 0.8;}
+#sns ul{
+    display:flex;
+    gap:12px;
+}
+
+@media (max-width:1816px) and (min-width:1622px){
+    .cont_05{font-size:25px;}
+}
+@media (max-width:1621px) and (min-width:1492px){
+    .cont_05{font-size:23px;}
+}
+@media (max-width:1491px) and (min-width:1237px){
+    
+    .cont_05{font-size:19px;}
+}
+
+
+@media (max-width:768px) {
+    .cont_01 .logo {top:90px; right: 20px; opacity:0.6;
+      }
+    /* section2 */
+    .title h2{font-size:20px; margin-top:60px;}
+    .title p{margin:10px 0 30px 0;}
+    .title ul{width:90%; margin:35px 0;}
+    .title ul li{width:100%; font-size:13px; padding:0;}
+    .swiper{width:1200px; height:480px;}
+    .swiper .swiper-slide img{opacity:1;}
+    #cont_02 .swiper-pagination{bottom:70px;}
+    #cont_02 .swiper-pagination-bullet{
+        width: 9px;
+        height: 9px;
+        margin: 0 7px !important;
+      }
+   
+    #cont_02 .swiper-button-prev,
+    #cont_02 .swiper-button-next{ display:none;}
+
+    /* section3 */
+    #free_title p{font-size:12px; margin-bottom:33px;}
+    #btnMore{font-size:14px; top:90%;}
+    .card_list{width:388px; display:flex; justify-content:space-around; flex-wrap:wrap; margin:0 auto; }
+    .card-wrap a{width:137px; height:194px;}
+    .card-wrap a img{height:100%;;}
+    .card-wrap::before,
+    .card-wrap::after{width:10px; height:10px;}
+    .card-wrap::before{top:-3px; left:-3px;}
+    .card-wrap::after{right:-3px; bottom:-3px;}
+    .card-wrap.is-draw::before,
+    .card-wrap.is-draw::after{
+        width:calc(100% + 4px);
+        height:calc(100% + 4px);
+    }
+    /* section4 */
+    .cont_04_title{font-size:20px; padding:50px 0;}
+
+    .reserve{width:89%;}
+    .reserve > li{height:136px;
+    border-radius:33px;
+    }
+    
+    .reserve_cont01 h4{font-size:20px;}
+    .reserve_cont01 span,
+    .reserve_cont01 p{font-size:14px;}
+ 
+    .arrow{top:50%; right:10%; width:35px; height:35px;}
+    .arrow a img{width:100%; height:100%;}
+    .arrow  span{display:none;}
+    .reserve > li:nth-child(3){display:block;}
+    /* section05 */
+    .cont_05{  height:250px; background-image:url(/culture_poter/img/cont_05-3.png); background-attachment:scroll; }
+    .cont_05 h3{width:63%; font-size:12px; text-align:center; line-height:1.8;}
+
+    /* footer */
+    footer{padding:5%; height:239px; position:relative;}
+    footer ul{font-size:9px;}
+    footer .logo_f{width:17%;}
+    footer ul > li img{margin:0; margin:0 13px 26px 0; width:32%; }
+    #sns ul{gap:15px; position:absolute; bottom:10px; left:5%;}
+    #sns ul li a img{width:30px; height:30px;}
+
+}

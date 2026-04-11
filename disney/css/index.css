@@ -1,0 +1,611 @@
+@font-face{
+  font-family:"disney";
+  src:url(../fonts/WaltDisney\ Font.ttf);
+  font-style:nomal;
+}
+*{margin:0; padding:0; box-sizing:border-box;}
+li{list-style:none;}
+a{text-decoration: none; color:inherit;}
+
+#main_video, #section1{position:absolute;}
+#main_video{
+  overflow: hidden;
+  z-index: 100;
+}
+
+#main_video > video{
+  object-fit: cover;
+}
+.section:nth-child(1){
+   position: relative;
+}
+
+
+.fp-watermark{
+    display:none;
+}
+#fp-nav ul li a span{background:#fff;}
+
+#section1{
+    position:relative;
+}
+#main_video2{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 45px;
+  height: 45px;
+  top: 90%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  /* margin: -10px 0 0 -10px; */
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(10px, 10px);
+  }
+}
+
+/* section2 */
+#section2{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: relative;
+}
+main {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  } 
+   
+.item {
+    width: 200px;
+    height: 300px;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+  
+    &:nth-child(1), &:nth-child(2) {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: none;
+      border-radius: 0;
+      box-shadow: none;
+      opacity: 1;
+    }
+  
+    &:nth-child(3) { left: 50%;}
+    &:nth-child(4) { left: calc(50% + 220px); }
+    &:nth-child(5) { left: calc(50% + 440px); }
+    &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+}
+.content {
+    width: min(30vw,400px);
+    height:100%;
+    position: absolute;
+    top: 70%;
+    left: 3rem;
+    transform: translateY(-50%);
+    font: 400 1.2rem helvetica,sans-serif;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    opacity: 0;
+    display: none;
+    overflow: hidden;
+  
+    & .title {
+      width:350px;
+      height:150px;
+     margin-bottom:50px;
+    }
+    & .title > img{
+      width:100%;
+      height:100%;
+    }
+  
+    & .text {
+      margin: 1rem 0 1.5rem;
+    }
+  
+    & button {
+      width: fit-content;
+      background-color: rgba(0,0,0,0.1);
+      color: white;
+      border: 2px solid white;
+      border-radius: 0.25rem;
+      padding: 1rem;
+      cursor: pointer;
+      margin-top:20px;
+      font-size:1.2rem;
+    }
+}
+  
+.item:nth-of-type(2) .content {
+    display: block;
+    animation: show 0.75s ease-in-out 0.3s forwards;
+}
+  
+@keyframes show {
+    0% {
+      filter: blur(5px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+  
+.button {
+    position: absolute;
+    top: 66%;
+    left: 55.5%;
+    transform: translateX(-50%);
+    z-index: 5;
+    user-select: none;
+  
+    & .btn {
+      background-color: rgba(255,255,255,0.5);
+      color: rgba(0,0,0,0.7);
+      border: 2px solid rgba(0,0,0,0.6);
+      margin: 0.8rem;
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+}
+  
+@media (width > 650px) and (width < 900px) {
+    .content {
+      & .title        { font-size: 1rem; }
+      & .text  { font-size: 0.7rem; }
+      & button        { font-size: 0.7rem; }
+    }
+    .item {
+      width: 160px;
+      height: 270px;
+  
+      &:nth-child(3) { left: 50%; }
+      &:nth-child(4) { left: calc(50% + 170px); }
+      &:nth-child(5) { left: calc(50% + 340px); }
+      &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+    }
+}
+  
+@media (width < 650px) {
+    .content {
+      & .title        { font-size: 0.9rem; }
+      & .text  { font-size: 0.65rem; }
+      & button        { font-size: 0.7rem; }
+    }
+    .item {
+      width: 130px;
+      height: 220px;
+  
+      &:nth-child(3) { left: 50%; }
+      &:nth-child(4) { left: calc(50% + 140px); }
+      &:nth-child(5) { left: calc(50% + 280px); }
+      &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+    }
+} 
+
+/* section3 */
+#section3{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  position: relative;
+  background-color: black;
+}
+#marvel_video{
+  width:100%;
+  height:100vh;
+  display:flex;
+  overflow: hidden;
+}
+#marvel_video li{
+  flex:calc(100% / 4);
+  position: relative;
+  transition:0.5s;
+}
+#marvel_video li  video{
+  width:100%;
+  height:100vh;
+  object-fit: cover;
+}
+#marvel_video li :before{
+  content:"";
+  position:absolute;
+  inset:0;
+}
+#marvel_video li:hover{
+  flex-basis: 100%;
+}
+.logo{
+  height:100%;
+  padding:0 12px;
+  align-content:center;
+  position:absolute;
+  top:0;
+  cursor: pointer;
+  z-index: 300;
+
+}
+
+.logo > img{
+  width:100%;
+}
+
+#section3{background-color:black}
+
+#marvel_video li:nth-of-type(1) div
+{background-image:url("./../img/back1.png"); background-repeat: no-repeat;}
+#marvel_video li:nth-of-type(2) div
+{background-image:url("./../img/back2.png"); background-repeat: no-repeat;}
+#marvel_video li:nth-of-type(3) div
+{background-image:url("./../img/back3.png"); background-repeat: no-repeat;}
+#marvel_video li:nth-of-type(4) div
+{background-image:url("./../img/back2.png"); background-repeat: no-repeat;}
+
+
+
+/* section4 */
+.cont1{
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  position: relative;
+}
+.cont1 img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.cont1 > p{
+  position: absolute;
+  top:43%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  color:#fff;
+  font-family:"disney";
+}
+
+
+.cont2 p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  color:#fff;
+  font-family:"disney";
+  z-index: 100;
+}
+#carousel-wrap{
+  height:100vh;
+  display:flex;
+  overflow: hidden;
+  background-color: black;
+}
+.carousel{
+  animation: infinity-loop 10s infinite linear 1s both; 
+}
+.carousel-cont1{
+  animation: infinity-loop-4 10s infinite linear 1s both; 
+}
+.carousel2{
+  animation: infinity-loop-1 10s infinite linear 1s both;
+}
+.carousel2-cont1{
+  animation: infinity-loop-2 10s infinite linear 1s both;
+}
+
+.carousel li,
+.carousel-cont1 li,
+.carousel2 li,
+.carousel2-cont1 li
+{
+  width:100%;
+  height:540px;
+}
+.carousel img,
+.carousel-cont1 img,
+.carousel2 img,
+.carousel2-cont1 img
+{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+@keyframes infinity-loop{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform: translateY(-100%);
+  }
+}
+@keyframes infinity-loop-4{
+  from{
+    transform:translateY(0);
+  }
+  to{
+    transform: translateY(-100%);
+  }
+}
+@keyframes infinity-loop-1{
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform:translateY(0);
+    
+  }
+}    
+@keyframes infinity-loop-2{
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform:translateY(0%);
+    
+  }
+}    
+
+.cont3{
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  position: relative;
+  /* overflow: hidden; */
+}
+.background-img img{
+  width:100%;
+  height:100vh;
+}
+
+.attraction-title{
+  position:absolute;
+  left:178px;
+  top:50%;
+  color:#fff;
+  font-family:"disney";
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.attraction-title p{
+  font-size:5rem;
+}
+.attraction-title span{
+  display:block;
+  font-size:8rem;
+}
+.circle{
+  width:50%;
+  height:90%;
+  border: 3px solid #ffffff;
+  position: absolute;
+  top:50%;
+  right:200px;
+  transform:translateY(-50%);
+  border-radius: 100%;
+}
+.circle img{
+  width:92%;
+  height:90%;
+  position: absolute;
+  left:52%;
+  top:52%;
+  transform: translate(-50%,-50%);
+}
+.land-icon{
+  width:150px;
+  height:150px;
+  position:absolute;
+  cursor: pointer;
+}
+.land-icon > img{
+  width:100%;
+  height:100%;
+}
+.tomorrow{
+  position: absolute;
+  right:23%;
+  top:35%;
+}
+.western{
+  position: absolute;
+  top:22%;
+  right:39%;
+}
+.fantasy{
+  position: absolute;
+  top:13%;
+  right:24%;
+}
+#tomorrow-wrap,#fantasy-wrap{display:none;} 
+/* section5 */
+.slide{position: relative;}
+
+.circle-1{
+  width:50%;
+  height:93%;
+  border:3px solid #ffffff;
+  position: absolute;
+  top:50%;
+  right:200px;
+  transform:translateY(-50%);
+  border-radius: 100%;
+}
+
+.circle-1 img{
+  width:75%;
+  height:88%;
+  position: absolute;
+  right:10%;
+  top:9%; 
+  /* transform: translate(-50%,-50%); */
+  transform: rotate(10deg);
+}
+.mermaid{
+  position: absolute;
+  right:28%;
+  top:37%;
+}
+.tower{
+  position: absolute;
+  top:51%;
+  left:50%;
+}
+.peterpan{
+  position: absolute;
+  top:25%;
+  right:20%;
+}
+
+#spring-wrap, #tower-wrap{display:none;}
+
+/* footer */
+#footer{
+  height:230px;
+  background-color:#0e0b14;
+  position: relative;
+}
+#f-section{
+  width:90%;
+  margin:0 auto;
+  border-bottom: 3px solid #ffffff;
+}
+#f-section .line > img{width:100%;}
+
+#footer-list ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:13px 0;
+}
+
+
+#f-logo{
+  font-size:3rem;
+  color:#fff;
+  font-family:"disney";
+}
+#f-list{
+  color:#fff;
+  font-size:20px;
+}
+#f-list ul li{margin:20px;}
+
+#sns ul li{
+  width:34px;
+  height:34px;
+  margin:10px;
+ 
+}
+#sns ul li img{
+  width:100%;
+  height:100%;
+}
+
+
+
+/* sidebar */
+#sidebar ul{
+  width:100%;
+  position:absolute;
+  top:0;
+  display:flex;
+  justify-content: space-between;
+  padding:38px 55px 0 80px;
+  z-index:200;
+}
+#logo{
+  font-size:3rem;
+  color:#fff;
+  font-family:"disney";
+}
+.menu,.close{cursor: pointer;}
+.menu img, .close img{
+width:30px;
+height:30px;
+}
+nav{
+width:376px;
+height:100vh;
+color: #fff;
+background-color:rgba(0,0,0,.5) ;
+position:fixed;
+right:-376px;
+top:0;
+transition:.8s;
+}
+.close{
+position:absolute;
+top:38px;
+right:55px;
+}
+
+#gnb{
+height:50%;
+display:flex;
+flex-flow:column;
+align-items:center;
+text-align: center;
+margin-top:50%;
+font-size:23px;
+}

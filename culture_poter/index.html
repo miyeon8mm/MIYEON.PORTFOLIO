@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script>
+        if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+        window.addEventListener("pageshow", () => window.scrollTo(0, 0));
+        window.scrollTo(0, 0);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화포털</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/culture_poter/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index2.js" defer></script>
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="stage" id="stage">
+            <section class="cont_01" id="cont_01">
+                <img class="intro" src="img/black_cover2.png" alt="black_cover">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+            </section>
+
+            <section id="cont_02" class="cont">
+                <div class="inner_01">
+                    <div class="title" id="best">
+                      <h2>이번주 예매 BEST</h2>
+                        <ul class="ct-list_01">
+                            <li class="is-active">공연</li>
+                            <li>전시</li>
+                            <li>축제</li>
+                            <li>교육 / 체험</li>
+                        </ul>   
+                    </div>
+                    <!-- 공연 -->
+                    <div id="concert" class="best-panel is-active">
+                      <div class="swiper swiper-concert">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/eye_page.html"><img src="img/cont02/concert/concert_01.jpg" alt="concert01"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/blue_lion.html"><img src="img/cont02/concert/concert_02.jpg" alt="concert02"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/princess.html"><img src="img/cont02/concert/concert_03.jpg" alt="concert03"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=155805&menuNo=200008"><img src="img/cont02/concert/concert_04.jpg" alt="concert04"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156230&menuNo=200008"><img src="img/cont02/concert/concert_05.png" alt="concert05"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156352&menuNo=200008"><img src="img/cont02/concert/concert_06.jpg" alt="concert06"></a></div>
+                          </div>
+                      
+                        
+                          <button class="swiper-button-prev"></button>
+                          <button class="swiper-button-next"></button>
+                          
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  
+                    <!-- 전시 -->
+                    <div id="display" class="best-panel">
+                      <div class="swiper swiper-display">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/jean-michel.html"><img src="img/cont02/display/display_01.png" alt="display01"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/night_travel.html"><img src="img/cont02/display/display_02.jpg" alt="display02"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/the_drawing.html"><img src="img/cont02/display/display_03.jpg" alt="display03"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/cookierun.html"><img src="img/cont02/display/display_04.jpg" alt="display04"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=155172&menuNo=200009"><img src="img/cont02/display/display_05.jpg" alt="display05"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=155990&menuNo=200009"><img src="img/cont02/display/display_06.jpg" alt="display06"></a></div>
+                          </div>
+                      
+                          <button class="swiper-button-prev"></button>
+                          <button class="swiper-button-next"></button>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- 축제 -->
+                    <div id="festival" class="best-panel">
+                      <div class="swiper swiper-festival">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/2026_plan.html"><img src="img/cont02/festival/festival_01.jpg" alt="festival01"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/winter_travel.html"><img src="img/cont02/festival/festival_02.jpg" alt="festival02"></a></div>
+                          <div class="swiper-slide"><a href="/culture_poter/sub_page/traditional wedding.html"><img src="img/cont02/festival/festival_03.jpg" alt="festival03"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156332&menuNo=200010"><img src="img/cont02/festival/festival_04.jpg" alt="festival04"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156302&menuNo=200010"><img src="img/cont02/festival/festival_05.png" alt="festiva05"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156271&menuNo=200010"><img src="img/cont02/festival/festival_06.jpg" alt="festival06"></a></div>
+                          </div>
+                      
+                          <button class="swiper-button-prev"></button>
+                          <button class="swiper-button-next"></button>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- 교육 -->
+                    <div id="edu" class="best-panel">
+                      <div class="swiper swiper-edu">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="/sub_page/2025_education.html"><img src="img/cont02/edu/edu_01.png" alt="ed01"></a></div>
+                          <div class="swiper-slide"><a href="/sub_page/winter_travel.html"><img src="img/cont02/edu/edu_02.jpg" alt="ed02"></a></div>
+                          <div class="swiper-slide"><a href="/sub_page/sejong.html"><img src="img/cont02/edu/edu_03.jpg" alt="ed03"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156346&menuNo=200011"><img src="img/cont02/edu/edu_04.jpg" alt="edu04"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156499&menuNo=200011"><img src="img/cont02/edu/edu_05.jpg" alt="edu05"></a></div>
+                          <div class="swiper-slide"><a href="https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=156508&menuNo=200011"><img src="img/cont02/edu/edu_06.jpg" alt="edu06"></a></div>
+                          </div>
+
+                          <button class="swiper-button-prev"></button>
+                          <button class="swiper-button-next"></button>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                   
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+            <!-- section3 -->
+            <section id="cont_03" class="cont">
+                <div class="inner_01">
+                  <div class="title" id="free_title">
+                    <h2>돈 안들고 즐기는 무료 문화</h2>
+                    <p>#무료 전시 #무료 공연</p>
+                      <ul class="ct-list_02">
+                          <li class="is-active">공연</li>
+                          <li>전시</li>
+                          <li>축제</li>
+                          <li>교육 / 체험</li>
+                      </ul>   
+                  </div>
+
+                  <!-- 공연 -->
+                    <ul class="card_list is-active">
+                      <li class="card">
+                        <div class="card-wrap">
+                           <a href="/culture_poter/sub_page/department.html"><img src="img/cont03/concert/free_concert01.jpg" alt="free_concert01"></a>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="card-wrap">
+                           <a href="/culture_poter/sub_page/2026_concert.html"><img src="img/cont03/concert/free_concert02.png" alt="free_concert02"></a>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="card-wrap">
+                           <a href="/culture_poter/sub_page/blue_lion.html"><img src="img/cont03/concert/free_concert03.jpg" alt="free_concert03"></a>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="card-wrap">
+                          <a href="/culture_poter/sub_page/cantabile.html"><img src="img/cont03/concert/free_concert04.jpg" alt="free_concert04"></a>
+                        </div>
+                      </li>
+                    </ul>
+                  
+                   <!-- 전시 -->
+                   <ul class="card_list">
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/the world.html"><img src="img/cont03/display/free_display01.jpg" alt="free_display01"></a>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/donation.html"><img src="img/cont03/display/free_display02.jpg" alt="free_display02"></a>
+                      </div>
+                    </li>
+                     <li class="card">
+                      <div class="card-wrap">
+                        <a href="/culture_poter/sub_page/breath.html"><img src="img/cont03/display/free_display04.png" alt="free_display04"></a>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/extraction.html"><img src="img/cont03/display/free_display05.jpg" alt="free_display03"></a>
+                      </div>
+                    </li>
+                   
+                  </ul>
+                   <!-- 축제-->
+                   <ul class="card_list">
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/yeondeung.html"><img src="img/cont03/festival/free_festival01.jpg" alt="free_festival01"></a>
+                      </div>
+                    </li>
+                  </ul>
+                   <!-- 교육 / 체험 -->
+                   <ul class="card_list">
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/ai.html"><img src="img/cont03/edu/free_edu01.jpg" alt="free_edu01"></a>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/storytelling.html"><img src="img/cont03/edu/free_edu02.png" alt="free_edu02"></a>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="card-wrap">
+                         <a href="/culture_poter/sub_page/women.html"><img src="img/cont03/edu/free_edu03.jpg" alt="free_edu03"></a>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="card-wrap">
+                        <a href="/culture_poter/sub_page/winter,reading.html"><img src="img/cont03/edu/free_edu04.jpg" alt="free_edu04"></a>
+                      </div>
+                    </li>
+                  </ul>
+                  <button id="btnMore"><a href="/culture_poter/sub_page/free_page.html">+ 더보기</a></button>
+                </div>
+            </section>
+
+            <!-- section4 -->
+            <section id="cont_04" class="cont">
+                <div class="inner_01">
+                  <div class="cont_04_title">지금 주목할 문화공간, 바로 예약하세요.</div>
+                  
+                  <ul class="reserve">
+                    <li>
+                      <ul class="reserve_cont">
+                        <a href="https://jeju.museum.go.kr/html/kr/index.html">
+                          <li class="reserve_cont01">
+                            <h4>국립제주박물관</h4>
+                            <span>제주시 · 일주동로</span>
+                          </li>
+                          <li class="arrow">
+                            <img src="img/cont04/w_arrow_forward_ios_45dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="arrow">
+                            <span>행사보러가기</span>
+                          </li>
+                        </a>                        
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="reserve_cont">
+                        <a href="https://ddp.or.kr/?menuno=239">
+                          <li class="reserve_cont01">
+                            <h4>DDP</h4>
+                            <span>서울 · 동대문역사문화공원</span>
+                          </li>
+                          <li class="arrow">
+                            <img src="img/cont04/w_arrow_forward_ios_45dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="arrow">
+                            <span>행사보러가기</span>
+                          </li>
+                        </a>                       
+                      </ul>
+                    </li> 
+                    <li>
+                      <ul class="reserve_cont" >
+                        <a href="https://craftmuseum.seoul.go.kr/main">
+                            <li class="reserve_cont01">
+                              <h4>서울 공예 박물관</h4>
+                              <span>서울 · 종로구 안국동</span>
+                            </li>
+                            <li class="arrow">
+                              <img src="img/cont04/w_arrow_forward_ios_45dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png" alt="arrow">
+                              <span>행사보러가기</span>
+                            </li>
+                        </a>                                                   
+                      </ul>                       
+                    </li>
+                  </ul>
+                </div>
+            </section>
+        </div>
+        <!-- section05 -->
+        <section class="cont_05">
+          <h3>문화는 특별한 날에만 머무르지 않고, 오늘의 일상속에 있습니다.</h3>
+        </section>
+        <!-- footer -->
+        <footer>
+          <ul id="contact_c">
+            <li>
+              <img src="img/logo.png" alt="logo-f" class="logo_f">
+              <a href="https://www.kcisa.kr/" target="_blank"><img src="img/footer/문화정보원.png" alt=""></a>
+              <a href="https://www.mcst.go.kr/site/main.jsp" target="_blank"><img src="img/footer/체육관광부.png" alt=""></a>
+                <p>대표전화 1688 - 2220 / 이메일 culture@kcisa.kr</p>
+                <p>서울특별시 마포구 월드컵북로 400 6층·8층 (상암동, 서울경제진흥원)</p>
+                <p>COPYRIGHT© 한국문화정보원</p>
+            </li>
+            <li id="sns">
+              <ul>
+                <li><a href="https://www.youtube.com/channel/UCl02ZJk18gXDfs-Gl76PDSw" target="_blank"><img src="img/footer/youtube.png" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/?next=%2Fculture_portal%2F&source=omni_redirect" target="_blank"><img src="img/footer/insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/cultureportal" target="_blank"><img src="img/footer/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://blog.naver.com/kcis_" target="_blank"><img src="img/footer/blog.png" alt="blog"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </footer>
+    </div>
+     
+    
+</body>
+</html>
