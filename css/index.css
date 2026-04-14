@@ -544,7 +544,7 @@ button{background-color: none;}
 }
 
 @media (max-width:768px) {
-  #header_list {width:80%;}
+  #header_list {width:90%;}
   #section1{
     height:100%;
     margin-bottom:350px;
@@ -556,6 +556,7 @@ button{background-color: none;}
   #skill_list2{width:60%;}
   #skill_list2 img{width:30px; height:30px;}
   #right {width:36%;}
+  #work{top:1600px;}
   #work_wrap{padding:0;}
   #work_wrap ul{flex-direction: column;}
   #work_wrap > ul > li{width:100%; display:flex;}
@@ -571,16 +572,20 @@ button{background-color: none;}
 
   #section4-wrap{
     /* margin-top:1950px; */
-    margin-top:2420px;
+    margin-top:1855px;
   }
   #section4 > h2{padding:20px 0;}
   .swiper{width:100%}
 
+
+  #section5_wrap{top:180px;}
+
+  #section6 > ul{top:360px;}
   #sec6_list{width:90%;}
   /* footer */
   #f_wrap{
     height:268px;
-    top:5000px;
+    top:3680px;
   }
   #adress{
     display:flex;
