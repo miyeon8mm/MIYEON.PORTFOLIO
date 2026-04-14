@@ -126,26 +126,19 @@ $(function () {
   console.log($(window).scrollTop());
  });
 
-$(function(){
-
-  $(".swiper").hide(); 
-
-});
-let introPlayed = false;
-$(window).on("scroll", function(){
-  
+  $$(window).on("scroll", function(){
+  // 2. 모바일 버전이면 아래 스크롤 이벤트를 아예 실행 안 함 (인트로 방지)
+  if($(window).width() <= 768) return; 
 
   if(introPlayed) return;
 
   const scrollTop = $(window).scrollTop();
   const sectionTop = $("#section4").offset().top;
-
   const trigger = sectionTop - $(window).height() / 2;
 
   if(scrollTop > trigger){
 
     introPlayed = true;
-
     $("#work_intro").addClass("active");
 
     if(mySwiper){
@@ -155,7 +148,6 @@ $(window).on("scroll", function(){
     setTimeout(function(){
 
       $("#work_intro").addClass("hide");
-
       $(".swiper").fadeIn(500);
 
       if(mySwiper){

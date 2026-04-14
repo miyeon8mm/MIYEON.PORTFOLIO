@@ -556,11 +556,15 @@ button{background-color: none;}
   #main_img{width:254px; height:auto;}
 
   #sec2-wrap{top:180px;}
+  #section2 > h2{
+    top:-26px;
+    left:3%
+  }
   #skill_list img{width:30px; height:auto;}
   #skill_list2{width:60%;}
   #skill_list2 img{width:30px; height:30px;}
-  #right {width:36%;}
-  #work{top:1400px;}
+  #right {width:29%;}
+  #work{top:1550px;}
   #work_wrap{padding:0;}
   #work_wrap ul{flex-direction: column;}
   #work_wrap > ul > li{width:100%; display:flex;}
@@ -574,6 +578,8 @@ button{background-color: none;}
   #hompage_img .work_h{width:100%;}
   .work_h{margin-top:80px;}
 
+  /* section4 */
+  #work_intro{display:none;}
   #section4-wrap{
     /* margin-top:1950px; */
     margin-top:1855px;
