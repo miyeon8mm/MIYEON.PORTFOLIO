@@ -544,7 +544,7 @@ button{background-color: none;}
 }
 
 @media (max-width:768px) {
-  #header_list {width:50%;}
+  #header_list {width:80%;}
   #section1{
     height:100%;
     margin-bottom:350px;
