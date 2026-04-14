@@ -404,10 +404,12 @@ header{
 /* section5 */
 #section5{
   position: relative;
+  background-color: yellow;
 }
 #section5_wrap{
   position: absolute;
-  top:0;
+  top:250px;
+  left:0;
   width:100%;
 }
 #section5 h2,
@@ -437,17 +439,19 @@ header{
 
 #sec5_list div:hover,
 #sec6_list div:hover{
-  transform:scale(110%);
-  transition:1s;
+  transform:scale(106%);
+  transition:0.5s;
 }
 
 /* section6 */
 #section6{
+  position:relative;
+}
+#section6  >  ul{
   width:100%;
   height:88vh;
   position: absolute;
-  /* top:3450px; */
-  top:4220px;
+  top:680px;
 }
 #sec6_list div{width:300px; height:533px;}
 #sec6_list{width:65%;}
@@ -545,23 +549,44 @@ button{background-color: none;}
     height:100%;
     margin-bottom:350px;
   }
-  #main_img{width:285px; height:auto;}
+  #main_img{width:254px; height:auto;}
 
   #sec2-wrap{top:180px;}
   #skill_list img{width:30px; height:auto;}
   #skill_list2{width:60%;}
   #skill_list2 img{width:30px; height:30px;}
   #right {width:36%;}
+  #work_wrap{padding:0;}
   #work_wrap ul{flex-direction: column;}
-  #work_wrap > ul > li{display:flex;}
+  #work_wrap > ul > li{width:100%; display:flex;}
   #work_wrap ul li .list{
+    width:100%;
     flex-direction: column;
     justify-content: space-between;
-    width:280px; background-color: tan;
-  }
-  .work_h{margin-top:80px; width:500px;}
+    /* background-color: tan; */
 
-  #section4-wrap{margin-top:1950px;}
+  }
+  #hompage_img .work_h{width:100%;}
+  .work_h{margin-top:80px;}
+
+  #section4-wrap{
+    /* margin-top:1950px; */
+    margin-top:2420px;
+  }
   #section4 > h2{padding:20px 0;}
+  .swiper{width:50%}
+
+  #sec6_list{width:90%;}
+  /* footer */
+  #f_wrap{
+    height:268px;
+    top:5000px;
+  }
+  #adress{
+    display:flex;
+    flex-direction:row;
+    top:199px;
+  }
+  #adress > div:nth-child(1){margin-right:22px;}
 }
 
