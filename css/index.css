@@ -560,7 +560,7 @@ button{background-color: none;}
   #skill_list2{width:60%;}
   #skill_list2 img{width:30px; height:30px;}
   #right {width:36%;}
-  #work{top:1600px;}
+  #work{top:1400px;}
   #work_wrap{padding:0;}
   #work_wrap ul{flex-direction: column;}
   #work_wrap > ul > li{width:100%; display:flex;}
