@@ -268,7 +268,7 @@ header{
   height:100%;
 }
 
-.pop-up{position: relative; width:100%; height:100%;}
+.pop-up{position: relative; width:100%; height:100%; display:none;}
 .pop-up-cont{
   width:100%;
   background-color: #f7f5f5;
@@ -578,10 +578,8 @@ button{background-color: none;}
   height:100%;
   
 }
-#f_text{
-  text-align: center;
-  padding-top:20px;
-}
+#f_text{text-align: center;}
+#adress span{display:block;}
 
 
 
@@ -662,10 +660,24 @@ button{background-color: none;}
     top:3680px;
   }
   #adress{
+    width:100%;
     display:flex;
-    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    left:0%;
+    font-size:12px;
+    /* flex-direction:row; */
     top:199px;
   }
-  #adress > div:nth-child(1){margin-right:22px;}
+  #adress div{align-items:center;}
+  #adress div:nth-child(1){margin-bottom:0;}
+  .adress_img{width:30px;}
+  .adress_img img{
+  width:100%;
+  height:100%;
+  }
+
+  #f_text{padding-top:0;}
 }
+
 
