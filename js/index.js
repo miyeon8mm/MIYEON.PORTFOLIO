@@ -75,7 +75,7 @@ $(function () {
     $("body").css("overflow","hidden");
   });
 
-  $(".pop-up").click(function(){
+  $(".banner").click(function(){
     $(this).fadeOut();
     $("body").css("overflow","auto");
   });
@@ -96,7 +96,7 @@ $(function () {
     $("body").css("overflow","hidden");
   });
 
-  $(".pop-up2").click(function(){
+  $(".poster").click(function(){
     $(this).fadeOut();
     $("body").css("overflow","auto");
   });
@@ -126,10 +126,14 @@ $(function () {
   console.log($(window).scrollTop());
  });
 
-  $$(window).on("scroll", function(){
-  // 2. 모바일 버전이면 아래 스크롤 이벤트를 아예 실행 안 함 (인트로 방지)
-  if($(window).width() <= 768) return; 
+ $(function(){
+  // 무조건 숨기고 시작 (데스크탑 기준)
+  $(".swiper").hide(); 
+});
 
+let introPlayed = false;
+$(window).on("scroll", function(){
+  
   if(introPlayed) return;
 
   const scrollTop = $(window).scrollTop();
@@ -137,7 +141,6 @@ $(function () {
   const trigger = sectionTop - $(window).height() / 2;
 
   if(scrollTop > trigger){
-
     introPlayed = true;
     $("#work_intro").addClass("active");
 
@@ -146,18 +149,14 @@ $(function () {
     }
 
     setTimeout(function(){
-
       $("#work_intro").addClass("hide");
       $(".swiper").fadeIn(500);
 
       if(mySwiper){
         mySwiper.allowTouchMove = true;
       }
-
     }, 1000);
-
   }
-
 });
 
 $('.list').click(function(e){
