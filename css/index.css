@@ -616,7 +616,7 @@ button{background-color: none;}
 }
 
 @media (max-width:1430px) {
-  #header_list{width:50px;}
+  #header_list{width:50%;}
 }
 @media (max-width:768px) {
   #intro_logo{font-size:30px;}
