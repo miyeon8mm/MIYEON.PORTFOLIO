@@ -690,7 +690,9 @@ button{background-color: none;}
     display:block !important;
     opacity:1 !important;
   }
-
+  .swiper-slide .text{padding:0 20px;}
+  .overlay h3, .overlay-1 h3{font-size:18px;}
+  .overlay p, .overlay-1 p{font-size:12px;}
 
   #section5_wrap{top:0px;}
   #sec5_list{
