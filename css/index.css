@@ -679,6 +679,14 @@ button{background-color: none;}
     width:100%;
     margin-top:50px;
   }
+   .pop-up-cont > ul, .pop-up-02-cont > ul{flex-direction:column; align-items:center;}
+  .pop-up-cont, .pop-up-02-cont{height:auto;}
+  .pop-up-t h4{font-size:14px;}
+  .pop-up-t p, .pop-up-t span{font-size:13px;}
+  .pop-up-t a{padding:3px 5px; margin:20px 0; font-size:12px;}
+  .pop-up-img > div{width:100%;}
+  .pop-up-02-img img{width:100%;}
+
 
   /* section4 */
   #work_intro{display:none !important;}
