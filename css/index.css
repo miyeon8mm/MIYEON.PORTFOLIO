@@ -696,6 +696,7 @@ button{background-color: none;}
     max-width:320px;
     margin:0 auto;
   }
+  .pop-up-img div img{widgth:100%;}
   .pop-up-img{grid-template-columns: repeat(2,1fr);}
   .pop-up-t h4{font-size:14px;}
   .pop-up-t p, .pop-up-t span{font-size:13px;}
