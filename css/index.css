@@ -73,7 +73,8 @@ header{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    font-family: "Ancizar Serif", serif;
+      font-family: 'Graduate';
+
     font-weight:700;
     font-size:20px;
 }
