@@ -621,7 +621,7 @@ button{background-color: none;}
 }
 @media (max-width:768px) {
   #intro_logo{font-size:30px;}
-  #header_list {width:90%; font-size:16px;  font-family: "Ancizar Serif", serif;}
+  #header_list {width:90%; font-size:16px;}
 
   .text-container{
     font-size:1.5rem;
