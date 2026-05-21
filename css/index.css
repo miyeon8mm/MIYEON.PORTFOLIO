@@ -571,6 +571,12 @@ button{background-color: none;}
   align-content:center;
   z-index: 999;
 }
+
+.pop-up-inner{
+  width:90%;
+  padding:100px;
+  background-color: #dadada;
+}
 .button{
   position: fixed;
   right:30px;
@@ -602,7 +608,10 @@ button{background-color: none;}
   display:grid;
   grid-template-columns: repeat(2,1fr);
 }
-.pop-up-img div{width:600px; margin-right:20px;}
+.pop-up-img div{
+  /* width:600px;  */
+  margin-right:20px;
+}
 .pop-up-img div img{width:100%;}
 .label{
   font-size:2rem;
