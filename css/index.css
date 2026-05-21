@@ -576,9 +576,10 @@ button{background-color: none;}
   width:90%;
   padding:100px;
   background-color: #dadada;
+  position:relative;
 }
 .button{
-  position: fixed;
+  position: absolute;;
   right:30px;
   top:20px;
   cursor: pointer;
