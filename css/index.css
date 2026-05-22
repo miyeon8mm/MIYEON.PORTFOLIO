@@ -715,6 +715,8 @@ button{background-color: none;}
     margin:0 auto;
     text-align:center;
   }
+  .button{width:28px; height:28px;}
+  .button img{width:100%; height:100%;}
   .pop-up-02-img img{width:100%;}
   .pop-up-img{grid-template-columns: repeat(2,1fr); gap:5px;}
   .pop-up-t h4{font-size:14px;}
