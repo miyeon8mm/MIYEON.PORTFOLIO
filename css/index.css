@@ -10,6 +10,12 @@ li{list-style:none;}
 }
 
 @font-face {
+    font-family: 'Cafe24ClassicType';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'RIDIBatang';
     src: url(../font/RIDIBatang.woff) format('woff');
     font-weight: normal;
@@ -114,7 +120,8 @@ header{
     left:28%;
     font-size: 3rem;
     z-index: 1;
-    font-family: "Graduate", serif;
+    font-family: 'Cafe24ClassicType';
+    /* font-family: "Graduate", serif; */
     font-weight:400;
 }
 #section2 > h2 > span{
