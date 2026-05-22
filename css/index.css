@@ -577,6 +577,7 @@ button{background-color: none;}
   padding:100px 10px;
   background-color: #dadada;
   position:relative;
+  margin:0 auto;
 }
 .button{
   position: absolute;;
@@ -705,7 +706,7 @@ button{background-color: none;}
   .pop-up-inner{
     width:78%;
     padding:50px 10px;
-    margin:0 auto;
+  
   }
   .pop-up-t,
   .pop-up-img{
