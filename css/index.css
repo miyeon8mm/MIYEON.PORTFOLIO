@@ -655,7 +655,9 @@ button{background-color: none;}
   #sec2-wrap{top:301px;}
   #section2 > h2{
     top:-26px;
-    left:3%
+    left:1%;
+    font-size:2.5rem;
+    width:146px;
   }
   #skill_list img{
     width:30px; 
