@@ -585,7 +585,7 @@ button{background-color: none;}
   top:20px;
   cursor: pointer;
 }
-.pop-up-inner > ul, .pop-up-02-cont > ul{
+.pop-up-inner > ul{
   display:flex;
   justify-content:space-around;
   align-items:center;
