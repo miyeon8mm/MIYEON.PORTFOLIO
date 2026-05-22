@@ -722,7 +722,7 @@ button{background-color: none;}
   .pop-up-t a{padding:3px 5px; margin:20px 0; font-size:12px;}
   .pop-up-img div{width:100%;}
 
-
+  .label{font-size:1.2rem;}
   /* section4 */
   #work_intro{display:none !important;}
   #section4-wrap{
