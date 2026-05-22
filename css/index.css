@@ -649,7 +649,7 @@ button{background-color: none;}
     height:100%;
     margin-bottom:50px;
   }
-  #main_img{width:254px; height:auto;}
+  #main_img{width:254px; height:auto; left:50%;}
 
   /* section2 */
   #sec2-wrap{top:301px;}
