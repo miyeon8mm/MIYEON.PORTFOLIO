@@ -695,8 +695,8 @@ button{background-color: none;}
    .pop-up-cont, .pop-up-02-cont{
     height:100vh;
     min-height:auto;
-    padding:70px 20px 40px;
-    align-content:normal;
+    padding:0 8px;
+    align-content:center;
    }
   .pop-up-inner > ul{
     flex-direction:column; 
