@@ -705,7 +705,7 @@ button{background-color: none;}
   }
   .pop-up-inner{
     width:78%;
-    padding:50px 10px;
+    padding:50px 5px;
   
   }
   .pop-up-t,
@@ -716,7 +716,7 @@ button{background-color: none;}
     text-align:center;
   }
   .pop-up-02-img img{width:100%;}
-  .pop-up-img{grid-template-columns: repeat(2,1fr);}
+  .pop-up-img{grid-template-columns: repeat(2,1fr); gap:5px;}
   .pop-up-t h4{font-size:14px;}
   .pop-up-t p, .pop-up-t span{font-size:13px;}
   .pop-up-t a{padding:3px 5px; margin:20px 0; font-size:12px;}
