@@ -574,7 +574,7 @@ button{background-color: none;}
 
 .pop-up-inner{
   width:90%;
-  padding:100px;
+  padding:100px 10px;
   background-color: #dadada;
   position:relative;
 }
@@ -606,6 +606,7 @@ button{background-color: none;}
 
 
 .pop-up-img{
+  width:60%;
   display:grid;
   grid-template-columns: repeat(2,1fr);
 }
