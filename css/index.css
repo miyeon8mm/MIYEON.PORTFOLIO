@@ -697,10 +697,15 @@ button{background-color: none;}
     padding:70px 20px 40px;
     align-content:normal;
    }
-  .pop-up-cont > ul, .pop-up-02-cont > ul{
+  .pop-up-inner > ul, .pop-up-02-cont > ul{
     flex-direction:column; 
     align-items:center;
     width:100%;
+  }
+  .pop-up-inner{
+    width:78%;
+    padding:50px 10px;
+    margin:0 auto;
   }
   .pop-up-t,
   .pop-up-img{
