@@ -584,7 +584,7 @@ button{background-color: none;}
   top:20px;
   cursor: pointer;
 }
-.pop-up-cont > ul, .pop-up-02-cont > ul{
+.pop-up-inner > ul, .pop-up-02-cont > ul{
   display:flex;
   justify-content:space-around;
   align-items:center;
@@ -611,7 +611,7 @@ button{background-color: none;}
 }
 .pop-up-img div{
   /* width:600px;  */
-  margin-right:20px;
+  padding-right:20px;
 }
 .pop-up-img div img{width:100%;}
 .label{
