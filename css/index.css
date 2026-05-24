@@ -746,7 +746,7 @@ button{background-color: none;}
     display:block !important;
     opacity:1 !important;
   }
-  .swiper-slide .text{padding:0 20px;}
+  .swiper-slide .text{padding:12px 20px 0;}
   .overlay h3, .overlay-1 h3{font-size:16px; margin-bottom:8px;}
   .overlay p, .overlay-1 p{font-size:12px; margin-top:8px;}
   .overlay span, .overlay-1 span {font-size:12px;}
