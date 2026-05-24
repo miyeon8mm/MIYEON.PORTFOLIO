@@ -618,18 +618,43 @@ button{background-color: none;}
   display:grid;
   grid-template-columns: repeat(2,1fr);
 }
-.pop-up-img div{
-  /* width:600px;  */
-  /* padding-right:20px; */
-}
 .pop-up-img div img{width:100%;}
 .label{
   font-size:2rem;
   color:#ffff;
+  width:100px;
+  height:50px;
+  line-height:50px;
   text-align: center;
-  background-color: rgb(13, 13, 122);
+  background-color:#a8a8a8;
 }
-
+#label_a{background-color:rgb(13, 13, 122);}
+.traffic{
+  width:90%;
+   margin:0 auto;
+  border:1px solid #000;
+}
+.traffic > b{text-align:center; padding:20px 0; font-size:1.8rem; display:block;}
+.traffic_wrap{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+}
+.traffic_cont{
+  padding:10px 100px;
+  margin-bottom:10px;
+  border-right:1px solid #000;
+  font-size:1.3rem;
+  line-height:1.7;
+  display:inline-block;}
+.traffic_cont:last-child{border:none;}
+.traffic_d_2,.traffic_d_3{
+  display:flex;
+  justify-content: center;
+}
+.traffic_d_2{color:rgb(13, 13, 122); gap:20px; font-size:1.5rem;}
+.traffic_d_3{color:rgb(31, 123, 57);}
+.traffic_d_2 span:nth-child(1),.traffic_d_2 p{color:#a8a8a8; font-size:1.3rem;}
 .pop-up-02 > ul{
   display:flex;
   justify-content:space-around;
