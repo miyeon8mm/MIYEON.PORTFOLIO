@@ -749,6 +749,8 @@ button{background-color: none;}
   .swiper-slide .text{padding:0 20px;}
   .overlay h3, .overlay-1 h3{font-size:16px; margin-bottom:8px;}
   .overlay p, .overlay-1 p{font-size:12px; margin-top:8px;}
+  .overlay span, .overlay-1 span {font-size:12px;}
+
 
   #section5_wrap{top:0px;}
   #sec5_list{
