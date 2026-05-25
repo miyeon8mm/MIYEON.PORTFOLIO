@@ -775,7 +775,7 @@ button{background-color: none;}
   .traffic_cont{font-size:11px; padding:0 12px;}
   .traffic b{font-size:15px;}
   .traffic_d_1 {gap:5px;}
-  .traffic_d_1 img{width:24px; height:24px;}
+  .traffic_d_1 img{width:20px; height:20px;}
   .traffic_d_2{font-size:14px; gap:5px;}
   .traffic_d_2 img{width:8px;}
   .traffic_d_2 span:nth-child(1){font-size:12px;}
