@@ -768,17 +768,17 @@ button{background-color: none;}
   .pop-up-t h4{font-size:14px;}
   .pop-up-t p, .pop-up-t span{font-size:13px;}
   .pop-up-t a{padding:3px 5px; margin:20px 0; font-size:14px;}
-  .pop-up-img div{width:100%;}
+  /* .pop-up-img div{width:100%;} */
 
-  .label{font-size:1.2rem; width:55px;}
-  .traffic_cont{font-size:12px; padding:0 4px;;}
+  .label{font-size:1.0rem; width:66px; height:28px; line-height:28px;}
+  .traffic_cont{font-size:12px; padding:0 12px;}
   .traffic b{font-size:15px;}
   .traffic_d_1 {gap:5px;}
   .traffic_d_1 img{width:24px; height:24px;}
   .traffic_d_2{font-size:14px; gap:5px;}
   .traffic_d_2 img{width:8px;}
   .traffic_d_2 span:nth-child(1){font-size:12px;}
-  .traffic_d_3 img{width:12px; height:12px;}
+  .traffic_d_3 img{width:12px;}
 
 
   /* section4 */
