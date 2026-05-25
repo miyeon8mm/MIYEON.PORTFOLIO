@@ -178,7 +178,7 @@ header{
 #skill_list2 img{width:55px; height:55px;}
 
 #left-bottom{
-  height:50%;
+  height:50%; 
   padding:10px 0 0 10px;
   line-height:2.5;
   font-family: 'RIDIBatang';
@@ -617,6 +617,7 @@ button{background-color: none;}
   width:60%;
   display:grid;
   grid-template-columns: repeat(2,1fr);
+  gap:12px;
 }
 .pop-up-img div img{width:100%;}
 .label{
@@ -630,7 +631,7 @@ button{background-color: none;}
 }
 #label_a{background-color:rgb(13, 13, 122);}
 .traffic{
-  width:90%;
+  width:97%;
    margin:0 auto;
   border:1px solid #000;
 }
@@ -650,7 +651,7 @@ button{background-color: none;}
 }
 .traffic_cont:last-child{border:none;}
 
-.traffic_d_1{display:flex; gap:10px;}
+.traffic_d_1{display:flex; justify-content:center; gap:10px;}
 .traffic_d_1 img{width:30px; height:30px;}
 .traffic_d_2 img{
   width:30px;
@@ -672,6 +673,7 @@ button{background-color: none;}
 
 @media (max-width:1430px) {
   #header_list{width:50%;}
+  .traffic_cont{padding:10px 12px; }
 }
 @media (max-width:768px) {
   #intro_logo{font-size:30px;}
@@ -769,7 +771,7 @@ button{background-color: none;}
   .pop-up-img div{width:100%;}
 
   .label{font-size:1.2rem; width:55px;}
-  .traffic_cont{font-size:12px; padding:0;}
+  .traffic_cont{font-size:12px; padding:0 4px;;}
   .traffic b{font-size:15px;}
   .traffic_d_1 {gap:5px;}
   .traffic_d_1 img{width:24px; height:24px;}
