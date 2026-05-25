@@ -771,7 +771,8 @@ button{background-color: none;}
   /* .pop-up-img div{width:100%;} */
 
   .label{font-size:1.0rem; width:66px; height:28px; line-height:28px;}
-  .traffic_cont{font-size:12px; padding:0 12px;}
+  .traffic{width:90%;}
+  .traffic_cont{font-size:11px; padding:0 12px;}
   .traffic b{font-size:15px;}
   .traffic_d_1 {gap:5px;}
   .traffic_d_1 img{width:24px; height:24px;}
