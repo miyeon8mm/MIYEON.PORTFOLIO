@@ -37,7 +37,7 @@ body{position:relative;}
   height:100%;
   transition:transform 1s ease, opacity 1s ease;
   font-size:50px;
-  color:aqua;
+  color:#F1EEE8;
   background-color: #2b2a2a;
 }
 
