@@ -34,21 +34,26 @@ $(function () {
 
 
   $("#header_list div").eq(0).click(function(){
+    if($(window).width() <= 768) return;
     $("html").animate({ scrollTop: 80 }, 1000);
   });
 
   $("#header_list div").eq(1).click(function(){
+    if($(window).width() <= 768) return;
     $("html").animate({ scrollTop: 1045 }, 1000);
   });
 
   $("#header_list div").eq(2).click(function(){
+    if($(window).width() <= 768) return;
     $("html").animate({ scrollTop: 1880 }, 1000);
   });
 
   $("#header_list div").eq(3).click(function(){
+    if($(window).width() <= 768) return;
     $("html").animate({ scrollTop: 2630 }, 1000);
   });
   $("#header_list div").eq(4).click(function(){
+    if($(window).width() <= 768) return;
     $("html").animate({ scrollTop: 3550 }, 2500);
   });
 
