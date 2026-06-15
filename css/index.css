@@ -112,6 +112,15 @@ header{
 @keyframes up{
     100%{transform:translateY(-200px)}
 }
+@media (max-width: 768px) {
+  .up {
+    animation: m-up .5s forwards;
+  }
+
+  @keyframes m-up {
+    100% { transform: translateY(-80px); }
+  }
+}
 
 #section2{position: relative;}
 #section2 > h2{

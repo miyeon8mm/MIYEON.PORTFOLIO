@@ -54,20 +54,13 @@ $(function () {
 
 
   $(window).on("scroll", function(){
-   
+
       const scrollTop = $(this).scrollTop();
 
-
-      
-    if(scrollTop > 300) $("#section2").addClass("up");
-    if(scrollTop > 1174) $("#work").addClass("up");
-    if(scrollTop > 1587) $("#section4-wrap").addClass("up");
-    if(scrollTop > 1958) $("#section5").addClass("up");
-  
-      // if(scrollTop > 300) $("#section2").addClass("up");
-      // if(scrollTop > 1174) $("#work").addClass("up");
-      // if(scrollTop > 1587) $("#section4-wrap").addClass("up");
-      // if(scrollTop > 1958) $("#section5").addClass("up");
+      if(scrollTop > 300) $("#section2").addClass("up");
+      if(scrollTop > 1174) $("#work").addClass("up");
+      if(scrollTop > 1587) $("#section4-wrap").addClass("up");
+      if(scrollTop > 1958) $("#section5").addClass("up");
       // if(scrollTop > 3320) $("#section6").addClass("up");
     
     
