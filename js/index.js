@@ -57,8 +57,9 @@ $(function () {
     if($(window).width() > 768){
       const scrollTop = $(this).scrollTop();
 
-      if(scrollTop > 400) $("#section2").addClass("up");
+      if(scrollTop > 300) $("#section2").addClass("up");
       if(scrollTop > 1200) $("#work").addClass("up");
+      if(scrollTop > 1200) $("#section4-wrap").addClass("up");
       if(scrollTop > 3120) $("#section5").addClass("up");
       if(scrollTop > 3320) $("#section6").addClass("up");
     }
