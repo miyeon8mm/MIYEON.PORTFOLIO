@@ -57,10 +57,22 @@ $(function () {
     if($(window).width() > 768){
       const scrollTop = $(this).scrollTop();
 
-      if(scrollTop > 300) $("#section2").addClass("up");
-      if(scrollTop > 1174) $("#work").addClass("up");
-      if(scrollTop > 1587) $("#section4-wrap").addClass("up");
-      if(scrollTop > 1958) $("#section5").addClass("up");
+
+       if(winW > 768){
+    if(scrollTop > 300) $("#section2").addClass("up");
+    if(scrollTop > 1174) $("#work").addClass("up");
+    if(scrollTop > 1587) $("#section4-wrap").addClass("up");
+    if(scrollTop > 1958) $("#section5").addClass("up");
+  } else {
+    if(scrollTop > 200) $("#section2").addClass("up");
+    if(scrollTop > 700) $("#work").addClass("up");
+    if(scrollTop > 1100) $("#section4-wrap").addClass("up");
+    if(scrollTop > 1500) $("#section5").addClass("up");
+  }
+      // if(scrollTop > 300) $("#section2").addClass("up");
+      // if(scrollTop > 1174) $("#work").addClass("up");
+      // if(scrollTop > 1587) $("#section4-wrap").addClass("up");
+      // if(scrollTop > 1958) $("#section5").addClass("up");
       // if(scrollTop > 3320) $("#section6").addClass("up");
     }
     
