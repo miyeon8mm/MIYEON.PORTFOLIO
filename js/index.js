@@ -53,18 +53,18 @@ $(function () {
   });
 
 
-  // $(window).on("scroll", function(){
-  //   if($(window).width() > 768){
-  //     const scrollTop = $(this).scrollTop();
+  $(window).on("scroll", function(){
+    if($(window).width() > 768){
+      const scrollTop = $(this).scrollTop();
 
-  //     if(scrollTop > 300) $("#section2").addClass("up");
-  //     if(scrollTop > 1174) $("#work").addClass("up");
-  //     if(scrollTop > 1587) $("#section4-wrap").addClass("up");
-  //     if(scrollTop > 1958) $("#section5").addClass("up");
-  //     // if(scrollTop > 3320) $("#section6").addClass("up");
-  //   }
+      if(scrollTop > 300) $("#section2").addClass("up");
+      if(scrollTop > 1174) $("#work").addClass("up");
+      if(scrollTop > 1587) $("#section4-wrap").addClass("up");
+      if(scrollTop > 1958) $("#section5").addClass("up");
+      // if(scrollTop > 3320) $("#section6").addClass("up");
+    }
     
-  // });
+  });
 
   $(".list:nth-child(1) > span, .work_h:nth-child(1) img").click(function(){
     var sec3_top = $(window).scrollTop();
