@@ -65,7 +65,7 @@ $(function () {
   //     if(scrollTop > 1958) $("#section5").addClass("up");
   //   }
     
-  });
+  // });
 
   $(".list:nth-child(1) > span, .work_h:nth-child(1) img").click(function(){
     var sec3_top = $(window).scrollTop();
