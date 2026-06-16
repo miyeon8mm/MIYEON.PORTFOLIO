@@ -75,13 +75,13 @@ $("#header_list div").eq(2).click(function(){
 
 $("#header_list div").eq(3).click(function(){
   $("html").animate({
-    scrollTop: $("#section5").offset().top
+    scrollTop: $("#section4").offset().top
   }, 1000);
 });
 
 $("#header_list div").eq(4).click(function(){
   $("html").animate({
-    scrollTop: $("#section6").offset().top
+    scrollTop: $("#section5").offset().top
   }, 1000);
 });
 
