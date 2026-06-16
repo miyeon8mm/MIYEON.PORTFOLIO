@@ -108,10 +108,10 @@ header{
 }
    
 /* section2 */
-.up{animation:up .5s forwards }
+/* .up{animation:up .5s forwards }
 @keyframes up{
     100%{transform:translateY(-200px)}
-}
+} */
 
 
 #section2{position: relative;}

@@ -35,25 +35,25 @@ $(function () {
 
 
 
-  $("#header_list div").eq(0).click(function(){
-    $("html").animate({ scrollTop: 80 }, 1000);
-  });
+  // $("#header_list div").eq(0).click(function(){
+  //   $("html").animate({ scrollTop: 80 }, 1000);
+  // });
 
-  $("#header_list div").eq(1).click(function(){
-    $("html").animate({ scrollTop: 1045 }, 1000);
-  });
+  // $("#header_list div").eq(1).click(function(){
+  //   $("html").animate({ scrollTop: 1045 }, 1000);
+  // });
 
-  $("#header_list div").eq(2).click(function(){
-    $("html").animate({ scrollTop: 1880 }, 1000);
-  });
+  // $("#header_list div").eq(2).click(function(){
+  //   $("html").animate({ scrollTop: 1880 }, 1000);
+  // });
 
-  $("#header_list div").eq(3).click(function(){
-    $("html").animate({ scrollTop: 2630 }, 1000);
-  });
+  // $("#header_list div").eq(3).click(function(){
+  //   $("html").animate({ scrollTop: 2630 }, 1000);
+  // });
 
-  $("#header_list div").eq(4).click(function(){
-    $("html").animate({ scrollTop: 3550 }, 2500);
-  });
+  // $("#header_list div").eq(4).click(function(){
+  //   $("html").animate({ scrollTop: 3550 }, 2500);
+  // });
 
   $("#header_list div").eq(0).click(function(){
   $("html, body").animate({
