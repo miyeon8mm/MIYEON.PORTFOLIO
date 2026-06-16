@@ -56,31 +56,31 @@ $(function () {
   // });
 
   $("#header_list div").eq(0).click(function(){
-  $("html, body").animate({
+  $("html").animate({
     scrollTop: $("#section1").offset().top
   }, 1000);
 });
 
 $("#header_list div").eq(1).click(function(){
-  $("html, body").animate({
+  $("html").animate({
     scrollTop: $("#section2").offset().top
   }, 1000);
 });
 
 $("#header_list div").eq(2).click(function(){
-  $("html, body").animate({
+  $("html").animate({
     scrollTop: $("#work").offset().top
   }, 1000);
 });
 
 $("#header_list div").eq(3).click(function(){
-  $("html, body").animate({
+  $("html").animate({
     scrollTop: $("#section5").offset().top
   }, 1000);
 });
 
 $("#header_list div").eq(4).click(function(){
-  $("html, body").animate({
+  $("html").animate({
     scrollTop: $("#section6").offset().top
   }, 1000);
 });
