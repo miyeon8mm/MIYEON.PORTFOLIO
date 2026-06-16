@@ -210,5 +210,4 @@ $('.list').click(function(e){
   $('.work_h').eq(index).stop(true, true).fadeIn(300);
 });
 
-console.log("현재 화면폭:", $(window).width());
 });
