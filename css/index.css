@@ -82,7 +82,7 @@ header{
 /* section1 */
 #section1{
    height:100vh;
-   margin-bottom: 400px;
+   margin-bottom: 350px;
    position:relative;
 }
 
@@ -114,7 +114,10 @@ header{
 } */
 
 
-#section2{position: relative;}
+#section2{
+  position: relative;
+  padding-top:50px;
+}
 #section2 > h2{
     width:180px;
     position: absolute;
@@ -137,7 +140,7 @@ header{
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   position: absolute;
-  top:100px;
+  top:150px;
 }
 
 #left{
@@ -427,7 +430,7 @@ header{
 }
 #section5_wrap{
   position: absolute;
-  top:250px;
+  top:50px;
   left:0;
   width:100%;
 }
