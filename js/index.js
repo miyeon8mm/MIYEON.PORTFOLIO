@@ -32,37 +32,38 @@ $(function () {
   index = 1;
   setInterval(showQuote, 4000);
 
+  if($(window).width() > 768){
+    $("#header_list div").eq(0).click(function(){
+        $("html").animate({ scrollTop: 80 }, 1000);
+      });
 
-  $("#header_list div").eq(0).click(function(){
-    $("html").animate({ scrollTop: 80 }, 1000);
-  });
+      $("#header_list div").eq(1).click(function(){
+        $("html").animate({ scrollTop: 1045 }, 1000);
+      });
 
-  $("#header_list div").eq(1).click(function(){
-    $("html").animate({ scrollTop: 1045 }, 1000);
-  });
+      $("#header_list div").eq(2).click(function(){
+        $("html").animate({ scrollTop: 1880 }, 1000);
+      });
 
-  $("#header_list div").eq(2).click(function(){
-    $("html").animate({ scrollTop: 1880 }, 1000);
-  });
-
-  $("#header_list div").eq(3).click(function(){
-    $("html").animate({ scrollTop: 2630 }, 1000);
-  });
-  $("#header_list div").eq(4).click(function(){
-    $("html").animate({ scrollTop: 3550 }, 2500);
-  });
+      $("#header_list div").eq(3).click(function(){
+        $("html").animate({ scrollTop: 2630 }, 1000);
+      });
+      $("#header_list div").eq(4).click(function(){
+        $("html").animate({ scrollTop: 3550 }, 2500);
+      });
+  }
+  
 
 
-  $(window).on("scroll", function(){
-    if($(window).width() > 768){
-      const scrollTop = $(this).scrollTop();
+  // $(window).on("scroll", function(){
+  //   if($(window).width() > 768){
+  //     const scrollTop = $(this).scrollTop();
 
-      if(scrollTop > 300) $("#section2").addClass("up");
-      if(scrollTop > 1174) $("#work").addClass("up");
-      if(scrollTop > 1587) $("#section4-wrap").addClass("up");
-      if(scrollTop > 1958) $("#section5").addClass("up");
-      // if(scrollTop > 3320) $("#section6").addClass("up");
-    }
+  //     if(scrollTop > 300) $("#section2").addClass("up");
+  //     if(scrollTop > 1174) $("#work").addClass("up");
+  //     if(scrollTop > 1587) $("#section4-wrap").addClass("up");
+  //     if(scrollTop > 1958) $("#section5").addClass("up");
+  //   }
     
   });
 
