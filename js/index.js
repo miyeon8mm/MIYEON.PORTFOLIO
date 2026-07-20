@@ -10,7 +10,34 @@ $(function () {
 
   }, 1000);
 
+  $(window).on("load", function () {
+  const $body = $("body");
+  const $introLogo = $("#intro_logo");
+  const $section1 = $("#section1");
 
+  $body.css("overflow", "hidden");
+
+  setTimeout(function () {
+    /* 기존 인트로가 사라지는 동작 */
+    $body.addClass("active");
+
+    /* 목업이 중앙에서 바깥으로 퍼짐 */
+    setTimeout(function () {
+      $section1.addClass("sec-active");
+    }, 500);
+
+    /* 목업이 퍼지는 도중 가운데 글자 등장 */
+    setTimeout(function () {
+      $section1.addClass("text-active");
+    }, 900);
+
+    /* 인트로가 끝난 뒤 제거 */
+    setTimeout(function () {
+      $introLogo.remove();
+      $body.css("overflow", "auto");
+    }, 2000);
+  }, 1000);
+});
   // const quotes = [
   //   "보는 재미와 쓰는 편안함, 그 사이의 균형을 늘 고민하고 있습니다.",
   //   "감각은 놓치지 않되, 방향은 언제나 사용자쪽을 향할 것입니다.",
