@@ -404,7 +404,7 @@ header{
   margin-top:18px;
   text-align: center;
 }
-.overlay button{
+.overlay button, .overlay-1 button{
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
