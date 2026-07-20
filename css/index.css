@@ -404,6 +404,15 @@ header{
   margin-top:18px;
   text-align: center;
 }
+.overlay button{
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
 
 .swiper-button-next,.swiper-button-prev{
