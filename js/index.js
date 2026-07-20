@@ -11,26 +11,26 @@ $(function () {
   }, 1000);
 
 
-  const quotes = [
-    "보는 재미와 쓰는 편안함, 그 사이의 균형을 늘 고민하고 있습니다.",
-    "감각은 놓치지 않되, 방향은 언제나 사용자쪽을 향할 것입니다.",
-    "낯선 환경에도 빠르게 적응하고, 팀 안에 자연스럽게 녹아드는 스타일입니다.",
-    "변화에 유연하게 대응하며, 실무에서도 조화롭게 협업할 수 있는 웹디자이너 겸 퍼블리셔가 되겠습니다."
-  ];
+  // const quotes = [
+  //   "보는 재미와 쓰는 편안함, 그 사이의 균형을 늘 고민하고 있습니다.",
+  //   "감각은 놓치지 않되, 방향은 언제나 사용자쪽을 향할 것입니다.",
+  //   "낯선 환경에도 빠르게 적응하고, 팀 안에 자연스럽게 녹아드는 스타일입니다.",
+  //   "변화에 유연하게 대응하며, 실무에서도 조화롭게 협업할 수 있는 웹디자이너 겸 퍼블리셔가 되겠습니다."
+  // ];
 
-  let index = 0;
-  const $text = $(".text-container");
+  // let index = 0;
+  // const $text = $(".text-container");
 
-  function showQuote() {
-    $text.fadeOut(500, function () {
-      $text.text(quotes[index]).fadeIn(1000);
-      index = (index + 1) % quotes.length;
-    });
-  }
+  // function showQuote() {
+  //   $text.fadeOut(500, function () {
+  //     $text.text(quotes[index]).fadeIn(1000);
+  //     index = (index + 1) % quotes.length;
+  //   });
+  // }
 
-  $text.text(quotes[0]).fadeIn(1000);
-  index = 1;
-  setInterval(showQuote, 4000);
+  // $text.text(quotes[0]).fadeIn(1000);
+  // index = 1;
+  // setInterval(showQuote, 4000);
 
 
 
