@@ -352,7 +352,7 @@ header{
 }
 .swiper-slide a{height:500px !important;}
 .swiper-slide a img{width:100%; height:100%; object-fit: cover;}
-/* .overlay,.overlay-1{
+.overlay,.overlay-1{
   position:absolute;
   top:0;
   right:0;
@@ -367,7 +367,7 @@ header{
   transform: translateX(100%);
   transition:all 0.2s ease;
   border-radius:30px;
-} */
+}
 .overlay-1{width:89%; right:0;}
 .swiper-slide:not(.swiper-slide-active) {
   pointer-events: none;
@@ -404,7 +404,7 @@ header{
   margin-top:18px;
   text-align: center;
 }
-.overlay button, .overlay-1 button{
+/* .overlay button, .overlay-1 button{
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
@@ -412,7 +412,7 @@ header{
   color: #fff;
   border: none;
   cursor: pointer;
-}
+} */
 
 
 .swiper-button-next,.swiper-button-prev{
