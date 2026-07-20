@@ -404,7 +404,7 @@ header{
   margin-top:18px;
   text-align: center;
 }
-.overlay .text button, .overlay-1 .textbutton{
+.overlay .text button a, .overlay-1 .text button a{
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
