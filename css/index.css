@@ -179,7 +179,7 @@ header{
 }
 
 
-#section1.sec-active .sec1_img1 {
+#section1.background-active .sec1_img1 {
   top: 27%;
   left: 18%;
   opacity: 0.3;
@@ -190,7 +190,7 @@ header{
     rotate(-8deg);
 }
 
-#section1.sec-active .sec1_img2 {
+#section1.background-active .sec1_img2 {
   top: 20%;
   left: 81%;
   opacity: 0.26;
@@ -201,7 +201,7 @@ header{
     rotate(8deg);
 }
 
-#section1.sec-active .sec1_img3 {
+#section1.background-active .sec1_img3 {
   top: 80%;
   left: 14%;
   opacity: 0.22;
@@ -212,15 +212,15 @@ header{
     rotate(7deg);
 }
 
-#section1 .background-active .sec1_img1 {
+.sec1_img1 {
   transition-delay: 0s;
 }
 
-#section1 .background-active .sec1_img2 {
+.sec1_img2 {
   transition-delay: 0.2s;
 }
 
-#section1 .background-active .sec1_img3 {
+.sec1_img3 {
   transition-delay: 0.4s;
 }
 
