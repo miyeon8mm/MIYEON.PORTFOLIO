@@ -111,7 +111,6 @@ header{
   height: auto;
 }
 
-/* 메인 이미지 등장 */
 #section1.main-active .sec1-main {
   opacity: 1;
 
@@ -120,7 +119,6 @@ header{
     scale(1);
 }
 
-/* 메인 이미지 퇴장 */
 #section1.main-out .sec1-main {
   opacity: 0;
 
@@ -131,7 +129,6 @@ header{
   pointer-events: none;
 }
 
-/* 이미지 전체 영역 */
 .sec1_background {
   position: absolute;
   top: 0;
@@ -215,15 +212,15 @@ header{
     rotate(7deg);
 }
 
-.sec1_img1 {
+#section1 .background-active .sec1_img1 {
   transition-delay: 0s;
 }
 
-.sec1_img2 {
+#section1 .background-active .sec1_img2 {
   transition-delay: 0.2s;
 }
 
-.sec1_img3 {
+#section1 .background-active .sec1_img3 {
   transition-delay: 0.4s;
 }
 
@@ -255,7 +252,6 @@ header{
   line-height: 1.5;
 }
 
-/* section1 자체에 text-active가 붙었을 때 */
 #section1.text-active .center-text {
   opacity: 1;
 
