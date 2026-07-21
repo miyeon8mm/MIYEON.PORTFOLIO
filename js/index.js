@@ -22,24 +22,24 @@ $(function () {
 
     setTimeout(function () {
       $section1.addClass("main-active");
-    }, 300);
+    }, 500);
 
     setTimeout(function () {
       $section1.addClass("main-out");
-    }, 1000);
+    }, 1800);
 
     setTimeout(function () {
       $section1.addClass("background-active");
-    }, 11000);
+    }, 2100);
 
     setTimeout(function () {
       $section1.addClass("text-active");
-    }, 1500);
+    }, 2600);
 
     setTimeout(function () {
       $intro.remove();
       $body.css("overflow", "auto");
-    }, 2200);
+    }, 3200);
 
   }, 1000);
 });
