@@ -18,30 +18,24 @@ $(function () {
   $body.css("overflow", "hidden");
 
   setTimeout(function () {
-    // PORTFOLIO 인트로 퇴장
     $body.addClass("active");
 
-    // 1. 대표 이미지 등장
     setTimeout(function () {
       $section1.addClass("main-active");
     }, 500);
 
-    // 2. 대표 이미지 퇴장
     setTimeout(function () {
       $section1.addClass("main-out");
     }, 1800);
 
-    // 3. 배경 이미지들이 바깥으로 퍼짐
     setTimeout(function () {
       $section1.addClass("background-active");
     }, 2100);
 
-    // 4. 중앙 글씨 등장
     setTimeout(function () {
       $section1.addClass("text-active");
     }, 2600);
 
-    // 인트로 제거 및 스크롤 허용
     setTimeout(function () {
       $intro.remove();
       $body.css("overflow", "auto");
