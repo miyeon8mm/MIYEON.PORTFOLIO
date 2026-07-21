@@ -80,91 +80,154 @@ header{
 }
 
 /* section1 */
-#section1{
-  position:relative;
-  width:100%;
-  height:100vh;
-  overflow:hidden;
-  /* background-color:#1d1d1f; */
+#section1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.sec1_background{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+/* 이미지 전체 영역 */
+.sec1_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
 }
 
-.sec1_background ul{
-  position:relative;
-  width:100%;
-  height:100%;
-  margin:0;
-  padding:0;
-}
-.sec1_img{
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:500px;
-  opacity:0;
-  transform:translate(-50%, -50%) scale(0.4);
-  transition: top 1.4s cubic-bezier(0.22, 1, 0.36, 1),
-  left 1.4s cubic-bezier(0.22, 1, 0.36, 1),
-  transform 1.4s cubic-bezier(0.22, 1, 0.36, 1),
-  opacity 0.8s ease;
-}
-.sec1_img img{
-  display:block;
-  width:100%;
-  height:auto;
+.sec1_background ul {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-#section1 .sec-active .sec1_img1{
-  top:20%;
-  left:13%;
-  opacity:0.3;
-  transform:translate(-50%, -50%) scale(0.75), rotate(-8deg);
-}
-#section1 .sec-active .sec1_img2{
-  top:20%;
-  left:87%;
-  opacity:0.26;
-  transform:translate(-50%, -50%),scale(0.7), rotate(8deg);
-}
-#section1 .sec-active .sec1_img3{
-  top:80%;
-  left:14%;
-  opacity:0.22;
-  transform:translate(-50%, -50%),scale(0.65), rotate(7deg);
-}
-.sec1_img1{transition-delay:0s;}
-.sec1_img2{transition-delay:0.2s;}
-.sec1_img3{transition-delay:0.4s;}
+/*
+HTML에 .sec1_img 클래스가 없으므로
+세 개의 li를 한꺼번에 선택
+*/
+.sec1_img1,
+.sec1_img2,
+.sec1_img3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-.center-text{
-  position:absolute;
-  top:50%;
-  left:50%;
-  z-index:10;
-  width:100%;
-  opacity:0;
-  text-align:center;
-  transform:translate(-50%, -50%), sclae(0,96);
-  transition:opacity 0.8s ease, transform 0.8s ease;
-}
-.center-text p{
-  margin:0;
-  color:#fff;
-  font-size:2.7rem;
-  font-weight:600;
-  line-height:2.5;
+  width: 500px;
+  opacity: 0;
+
+  transform: translate(-50%, -50%) scale(0.4);
+
+  transition:
+    top 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    left 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.8s ease;
 }
 
-#section1 .text-active .center-text{
-  opacity:1;
-  transform:translate(-50%, -50%) scale(1);
+.sec1_img1 img,
+.sec1_img2 img,
+.sec1_img3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* section1 자체에 sec-active가 붙었을 때 */
+
+/* 왼쪽 위 */
+#section1.sec-active .sec1_img1 {
+  top: 20%;
+  left: 13%;
+  opacity: 0.3;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.75)
+    rotate(-8deg);
+}
+
+/* 오른쪽 위 */
+#section1.sec-active .sec1_img2 {
+  top: 20%;
+  left: 87%;
+  opacity: 0.26;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.7)
+    rotate(8deg);
+}
+
+/* 왼쪽 아래 */
+#section1.sec-active .sec1_img3 {
+  top: 80%;
+  left: 14%;
+  opacity: 0.22;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.65)
+    rotate(7deg);
+}
+
+/* 시간차 */
+.sec1_img1 {
+  transition-delay: 0s;
+}
+
+.sec1_img2 {
+  transition-delay: 0.2s;
+}
+
+.sec1_img3 {
+  transition-delay: 0.4s;
+}
+
+/* 가운데 텍스트 */
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  width: 100%;
+
+  opacity: 0;
+  text-align: center;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.96);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.center-text p {
+  margin: 0;
+
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* section1 자체에 text-active가 붙었을 때 */
+#section1.text-active .center-text {
+  opacity: 1;
+
+  transform:
+    translate(-50%, -50%)
+    scale(1);
 }
 
 
