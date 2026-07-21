@@ -174,7 +174,7 @@ header{
 .sec1_img2 img,
 .sec1_img3 img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
