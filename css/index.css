@@ -86,6 +86,50 @@ header{
   height: 100vh;
   overflow: hidden;
 }
+.sec1-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+  width: min(700px, 65vw);
+
+  opacity: 0;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.75);
+
+  transition:
+    opacity 0.7s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sec1-main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 메인 이미지 등장 */
+#section1.main-active .sec1-main {
+  opacity: 1;
+
+  transform:
+    translate(-50%, -50%)
+    scale(1);
+}
+
+/* 메인 이미지 퇴장 */
+#section1.main-out .sec1-main {
+  opacity: 0;
+
+  transform:
+    translate(-50%, -50%)
+    scale(0.85);
+
+  pointer-events: none;
+}
 
 /* 이미지 전체 영역 */
 .sec1_background {
