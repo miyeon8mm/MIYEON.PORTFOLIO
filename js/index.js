@@ -10,32 +10,43 @@ $(function () {
 
   }, 1000);
 
-  $(window).on("load", function () {
+ $(window).on("load", function () {
   const $body = $("body");
-  const $introLogo = $("#intro_logo");
+  const $intro = $("#intro_logo");
   const $section1 = $("#section1");
 
   $body.css("overflow", "hidden");
 
   setTimeout(function () {
-    /* 기존 인트로가 사라지는 동작 */
+    // PORTFOLIO 인트로 퇴장
     $body.addClass("active");
 
-    /* 목업이 중앙에서 바깥으로 퍼짐 */
+    // 1. 대표 이미지 등장
     setTimeout(function () {
-      $section1.addClass("sec-active");
+      $section1.addClass("main-active");
     }, 500);
 
-    /* 목업이 퍼지는 도중 가운데 글자 등장 */
+    // 2. 대표 이미지 퇴장
+    setTimeout(function () {
+      $section1.addClass("main-out");
+    }, 1800);
+
+    // 3. 배경 이미지들이 바깥으로 퍼짐
+    setTimeout(function () {
+      $section1.addClass("background-active");
+    }, 2100);
+
+    // 4. 중앙 글씨 등장
     setTimeout(function () {
       $section1.addClass("text-active");
-    }, 900);
+    }, 2600);
 
-    /* 인트로가 끝난 뒤 제거 */
+    // 인트로 제거 및 스크롤 허용
     setTimeout(function () {
-      $introLogo.remove();
+      $intro.remove();
       $body.css("overflow", "auto");
-    }, 2000);
+    }, 3200);
+
   }, 1000);
 });
   // const quotes = [
