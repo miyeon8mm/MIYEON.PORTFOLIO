@@ -188,8 +188,8 @@ HTML에 .sec1_img 클래스가 없으므로
 
 /* 왼쪽 위 */
 #section1.sec-active .sec1_img1 {
-  top: 20%;
-  left: 13%;
+  top: 27%;
+  left: 18%;
   opacity: 0.3;
 
   transform:
@@ -201,7 +201,7 @@ HTML에 .sec1_img 클래스가 없으므로
 /* 오른쪽 위 */
 #section1.sec-active .sec1_img2 {
   top: 20%;
-  left: 87%;
+  left: 81%;
   opacity: 0.26;
 
   transform:
