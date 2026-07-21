@@ -153,10 +153,7 @@ header{
   list-style: none;
 }
 
-/*
-HTML에 .sec1_img 클래스가 없으므로
-세 개의 li를 한꺼번에 선택
-*/
+
 .sec1_img1,
 .sec1_img2,
 .sec1_img3 {
@@ -184,9 +181,7 @@ HTML에 .sec1_img 클래스가 없으므로
   height: auto;
 }
 
-/* section1 자체에 sec-active가 붙었을 때 */
 
-/* 왼쪽 위 */
 #section1.sec-active .sec1_img1 {
   top: 27%;
   left: 18%;
@@ -198,7 +193,6 @@ HTML에 .sec1_img 클래스가 없으므로
     rotate(-8deg);
 }
 
-/* 오른쪽 위 */
 #section1.sec-active .sec1_img2 {
   top: 20%;
   left: 81%;
@@ -210,7 +204,6 @@ HTML에 .sec1_img 클래스가 없으므로
     rotate(8deg);
 }
 
-/* 왼쪽 아래 */
 #section1.sec-active .sec1_img3 {
   top: 80%;
   left: 14%;
@@ -222,7 +215,6 @@ HTML에 .sec1_img 클래스가 없으므로
     rotate(7deg);
 }
 
-/* 시간차 */
 .sec1_img1 {
   transition-delay: 0s;
 }
@@ -235,7 +227,6 @@ HTML에 .sec1_img 클래스가 없으므로
   transition-delay: 0.4s;
 }
 
-/* 가운데 텍스트 */
 .center-text {
   position: absolute;
   top: 50%;
