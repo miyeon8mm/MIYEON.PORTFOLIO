@@ -19,34 +19,27 @@ $(function () {
 
   setTimeout(function () {
   // Header 인터랙션 시작
-  // 이 순간 Hero 메인 이미지가 희미하게 나타남
   $body.addClass("active");
 
-  // Header 인터랙션 종료 후 Hero 이미지 확대
+  // Header 인터랙션이 끝난 뒤 Hero 메인 이미지 확대
   setTimeout(function () {
     $section1.addClass("main-active");
   }, 1000);
 
-  // 메인 이미지 퇴장
+  // 배경이 흩어지는 동시에 메인 이미지 fade-out
   setTimeout(function () {
-    $section1.addClass("main-out");
+    $section1.addClass("main-out background-active");
   }, 1900);
-
-  // 배경 이미지 확산
-  setTimeout(function () {
-    $section1.addClass("background-active");
-  }, 2000);
 
   // 중앙 텍스트 등장
   setTimeout(function () {
     $section1.addClass("text-active");
   }, 2400);
 
-  // 인트로 제거 및 스크롤 허용
   setTimeout(function () {
     $intro.remove();
     $body.css("overflow", "auto");
-  }, 3100);
+  }, 3200);
 
 }, 1000);
 });

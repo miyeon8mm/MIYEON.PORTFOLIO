@@ -94,18 +94,18 @@ header{
 
   width: min(700px, 65vw);
 
-  opacity: 0;
+  opacity: 0.16;
 
   transform:
     translate(-50%, -50%)
     scale(0.82);
 
-  filter:blur(2px);
+  filter:blur(1.5px);
 
   transition:
-    opacity 0.8s ease,
-    transform 1s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.8s ease;
+    opacity 1.2s ease,
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1s ease;
 }
 .sec1-main img {
   display: block;
