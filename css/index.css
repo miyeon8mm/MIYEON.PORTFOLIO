@@ -113,16 +113,7 @@ header{
   height: auto;
 }
 
-body.active #section1 .sec1-main{
-  opacity:0.18;
-  transform:
-  translate(-50%, -50%) 
-  scale(0.86);
-
-  filter:blur(1.5px);
-}
-
-body.active #section1.main-active .sec1-main {
+#section1.main-active .sec1-main {
   opacity:1;
   transform:
     translate(-50%, -50%)
@@ -132,10 +123,9 @@ body.active #section1.main-active .sec1-main {
 }
 #section1.main-out .sec1-main {
   opacity: 0;
-
   transform:
     translate(-50%, -50%)
-    scale(1.12);
+    scale(1.04);
 
   pointer-events: none;
   filter:blur(1px);
