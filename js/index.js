@@ -18,31 +18,30 @@ $(function () {
   $body.css("overflow", "hidden");
 
   setTimeout(function () {
-    $body.addClass("active");
+  $body.addClass("active");
 
-    setTimeout(function () {
-      $section1.addClass("main-active");
-    }, 300);
-
-    setTimeout(function () {
-      $section1.addClass("main-out");
-    }, 1000);
-
-    setTimeout(function () {
-      $section1.addClass("background-active");
-    }, 1100);
-
-    setTimeout(function () {
-      $section1.addClass("text-active");
-    }, 1500);
-
-    setTimeout(function () {
-      $intro.remove();
-      $body.css("overflow", "auto");
-    }, 2200);
-
+  setTimeout(function () {
+    $section1.addClass("main-active");
   }, 1000);
-});
+
+  setTimeout(function () {
+    $section1.addClass("main-out");
+  }, 1900);
+
+  setTimeout(function () {
+    $section1.addClass("background-active");
+  }, 2000);
+
+  setTimeout(function () {
+    $section1.addClass("text-active");
+  }, 2400);
+
+  setTimeout(function () {
+    $intro.remove();
+    $body.css("overflow", "auto");
+  }, 3100);
+
+}, 1000);
   // const quotes = [
   //   "보는 재미와 쓰는 편안함, 그 사이의 균형을 늘 고민하고 있습니다.",
   //   "감각은 놓치지 않되, 방향은 언제나 사용자쪽을 향할 것입니다.",
