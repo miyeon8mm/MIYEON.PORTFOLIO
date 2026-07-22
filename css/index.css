@@ -28,7 +28,11 @@ li{list-style:none;}
   font-display: swap;
 }
 
-body{position:relative;}
+body{
+  position:relative;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
 #intro_logo{
   position:fixed;
   top:0;

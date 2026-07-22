@@ -15,7 +15,6 @@ $(function () {
   const $intro = $("#intro_logo");
   const $section1 = $("#section1");
 
-  $body.css("overflow", "hidden");
 
   setTimeout(function () {
   $body.addClass("active");
@@ -33,11 +32,6 @@ $(function () {
   setTimeout(function () {
     $section1.addClass("text-active");
   }, 1800);
-
-  setTimeout(function () {
-    $intro.remove();
-    $body.css("overflow", "auto");
-  }, 2300);
 
 }, 1000);
 });
