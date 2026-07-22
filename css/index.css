@@ -122,7 +122,7 @@ body.active #section1 .sec1-main{
   filter:blur(1.5px);
 }
 
-#section1.main-active .sec1-main{
+body.active #section1.main-active .sec1-main {
   opacity:1;
   transform:
     translate(-50%, -50%)
@@ -135,7 +135,7 @@ body.active #section1 .sec1-main{
 
   transform:
     translate(-50%, -50%)
-    scale(0.85);
+    scale(1.12);
 
   pointer-events: none;
   filter:blur(1px);
