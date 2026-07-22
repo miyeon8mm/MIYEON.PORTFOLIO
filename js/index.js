@@ -18,28 +18,24 @@ $(function () {
   $body.css("overflow", "hidden");
 
   setTimeout(function () {
-  // Header 인터랙션 시작
   $body.addClass("active");
 
-  // Header 인터랙션이 끝난 뒤 Hero 메인 이미지 확대
   setTimeout(function () {
     $section1.addClass("main-active");
-  }, 1000);
+  }, 300);
 
-  // 배경이 흩어지는 동시에 메인 이미지 fade-out
   setTimeout(function () {
     $section1.addClass("main-out background-active");
-  }, 1900);
+  }, 500);
 
-  // 중앙 텍스트 등장
   setTimeout(function () {
     $section1.addClass("text-active");
-  }, 2400);
+  }, 700);
 
   setTimeout(function () {
     $intro.remove();
     $body.css("overflow", "auto");
-  }, 3200);
+  }, 1000);
 
 }, 1000);
 });
