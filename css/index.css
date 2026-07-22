@@ -184,13 +184,13 @@ header{
 
 
 #section1.background-active .sec1_img1 {
-  top: 27%;
+  top: 30%;
   left: 18%;
   opacity: 0.3;
 
   transform:
     translate(-50%, -50%)
-    scale(0.75)
+    scale(0.7)
     rotate(-8deg);
 }
 
@@ -216,14 +216,14 @@ header{
     rotate(7deg);
 }
 #section1.background-active .sec1_img4 {
-  top: 83%;
+  top: 77%;
   left: 71%;
   opacity: 0.22;
 
   transform:
     translate(-50%, -50%)
     scale(0.65)
-    rotate(-6deg);
+    rotate(-7deg);
 }
 
 .sec1_img1 {
@@ -420,7 +420,7 @@ header{
 /* section3 */
 #work{
   position: absolute;
-  top:2100px;
+  top:1600px;
   right:0;
   width:100%;
 }
