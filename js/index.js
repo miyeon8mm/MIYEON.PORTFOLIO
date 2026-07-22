@@ -28,7 +28,7 @@ $(function () {
 
   // 배경이 흩어지는 동시에 메인 이미지 fade-out
   setTimeout(function () {
-    $section1.addClass("#section1.main-out.sec1-main  background-active");
+    $section1.addClass("main-out background-active");
   }, 1900);
 
   // 중앙 텍스트 등장
