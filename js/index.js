@@ -18,30 +18,38 @@ $(function () {
   $body.css("overflow", "hidden");
 
   setTimeout(function () {
+  // Header 인터랙션 시작
+  // 이 순간 Hero 메인 이미지가 희미하게 나타남
   $body.addClass("active");
 
+  // Header 인터랙션 종료 후 Hero 이미지 확대
   setTimeout(function () {
     $section1.addClass("main-active");
   }, 1000);
 
+  // 메인 이미지 퇴장
   setTimeout(function () {
     $section1.addClass("main-out");
   }, 1900);
 
+  // 배경 이미지 확산
   setTimeout(function () {
     $section1.addClass("background-active");
   }, 2000);
 
+  // 중앙 텍스트 등장
   setTimeout(function () {
     $section1.addClass("text-active");
   }, 2400);
 
+  // 인트로 제거 및 스크롤 허용
   setTimeout(function () {
     $intro.remove();
     $body.css("overflow", "auto");
   }, 3100);
 
 }, 1000);
+});
   // const quotes = [
   //   "보는 재미와 쓰는 편안함, 그 사이의 균형을 늘 고민하고 있습니다.",
   //   "감각은 놓치지 않되, 방향은 언제나 사용자쪽을 향할 것입니다.",

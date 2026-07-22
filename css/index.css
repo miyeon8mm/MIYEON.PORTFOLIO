@@ -113,7 +113,7 @@ header{
   height: auto;
 }
 
-body .active #section1 .sec1-main{
+body.active #section1 .sec1-main{
   opacity:0.18;
   transform:
   translate(-50%, -50%) 
