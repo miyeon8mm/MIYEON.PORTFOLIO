@@ -6,7 +6,7 @@ $(function () {
     setTimeout(function () {
       $("body").css("overflow", "auto");
       $("#intro_logo").remove();
-    }, 2000);
+    }, 1000);
 
   }, 1000);
 
