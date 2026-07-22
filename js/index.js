@@ -22,20 +22,22 @@ $(function () {
 
   setTimeout(function () {
     $section1.addClass("main-active");
-  }, 300);
+  }, 1000);
 
+  // 배경이 흩어지는 동시에 메인 이미지 fade-out
   setTimeout(function () {
     $section1.addClass("main-out background-active");
-  }, 500);
+  }, 1500);
 
+  // 중앙 텍스트 등장
   setTimeout(function () {
     $section1.addClass("text-active");
-  }, 700);
+  }, 1800);
 
   setTimeout(function () {
     $intro.remove();
     $body.css("overflow", "auto");
-  }, 1000);
+  }, 2300);
 
 }, 1000);
 });
