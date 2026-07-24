@@ -27,6 +27,18 @@ li{list-style:none;}
   font-weight: normal;
   font-display: swap;
 }
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Cafe24ShiningStar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
 
 body{
   position:relative;
@@ -267,7 +279,7 @@ header{
 
 .center-text p {
   margin: 0;
-
+  font-family: 'Suit';
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 1.5;
@@ -275,7 +287,6 @@ header{
 
 #section1.text-active .center-text {
   opacity: 1;
-
   transform:
     translate(-50%, -50%)
     scale(1);
@@ -411,7 +422,8 @@ header{
   width:100%;
   position: absolute;
   top:65%;
-
+  font-size:24px;
+  font-family: 'Cafe24ShiningStar';
 }
 #right-bottom > h3{margin-bottom:10px;}
 #main_img{
@@ -494,9 +506,7 @@ header{
 /* section4 */
 #section4-wrap{
   position: relative;
-  /* margin-top:1750px; */
-  /* margin-top:1317px */
-  margin-top:1454px;
+  margin-top:1680px;
 }
 #section4{
   width:100%;
@@ -551,7 +561,6 @@ header{
   position:relative;
   overflow:hidden;
 }
-/* .swiper-slide {height:500px !important;} */
 .swiper-slide  img{width:100%; height:100%; object-fit: cover;}
 .overlay,.overlay-1{
   position:absolute;
@@ -568,6 +577,7 @@ header{
   transform: translateX(100%);
   transition:all 0.2s ease;
   border-radius:30px;
+  cursor:initial;
 }
 .overlay-1{width:89%; right:0;}
 .swiper-slide:not(.swiper-slide-active) {
@@ -612,7 +622,6 @@ header{
   background-color: #000;
   color: #fff;
   border: none;
-  cursor: pointer;
   font-size:18px;
 }
 
