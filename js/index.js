@@ -172,7 +172,6 @@ $("#header_list div").eq(4).click(function(){
  });
 
  $(function(){
-  // 무조건 숨기고 시작 (데스크탑 기준)
   $(".swiper").hide(); 
 });
 
