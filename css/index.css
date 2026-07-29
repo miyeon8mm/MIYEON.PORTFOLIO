@@ -952,7 +952,9 @@ button{background-color: none;}
   #left_bottom{
     width:100%;
     border-top:1px solid#000;
+    line-height:2.3;
   }
+  .left-title{margin-bottom:14px;}
   .left-list{font-size:12px;}
  
   #right {
