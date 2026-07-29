@@ -1021,8 +1021,8 @@ button{background-color: none;}
     opacity:1 !important;
   }
   .swiper-slide .text{padding:12px 20px 0;}
-  .overlay h3, .overlay-1 h3{font-size:16px; margin-bottom:8px;}
-  .overlay p, .overlay-1 p{font-size:12px; margin-top:8px;}
+  .overlay h3, .overlay-1 h3{font-size:16px;}
+  .overlay p, .overlay-1 p{font-size:12px; margin-top:5px;}
   .overlay span, .overlay-1 span {font-size:12px;}
   .overlay .text button , .overlay-1 .text button{
   margin: 8px auto 0;
