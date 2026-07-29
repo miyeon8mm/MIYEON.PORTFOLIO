@@ -562,24 +562,7 @@ header{
   overflow:hidden;
 }
 .swiper-slide  img{width:100%; height:100%; object-fit: cover;}
-.overlay,.overlay-1{
-  position:absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:69%;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.3),
-    rgba(0,0,0,0.8),
-    transparent
-  );
-  transform: translateX(100%);
-  transition:all 0.2s ease;
-  border-radius:30px;
-  cursor:initial;
-}
-.overlay-1{width:89%; right:0;}
+
 .swiper-slide:not(.swiper-slide-active) {
   pointer-events: none;
 }
@@ -600,18 +583,37 @@ header{
   transition-delay:0.2s;
   color:#fff;
 }
+.overlay,.overlay-1{
+  position:absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height:69%;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.8),
+    transparent
+  );
+  transform: translateX(100%);
+  transition:all 0.2s ease;
+  border-radius:30px;
+  cursor:initial;
+}
+
+.overlay-1{width:89%; right:0;}
 
 .overlay h3,.overlay-1 h3{
   font-size:20px;
   margin-bottom:10px;
 }
 .overlay p, .overlay-1 p{
-  font-size:14px;
+  font-size:16px;
   opacity:0.8;
 }
 .overlay span, .overlay-1 span{
   display:block;
-  font-size:13px;
+  font-size:16px;
   margin-top:18px;
   text-align: center;
 }
@@ -694,7 +696,7 @@ header{
   width:100%;
   height:88vh;
   position: absolute;
-  top:550px;
+  top:480px;
 }
 #sec6_list div{width:300px; height:533px;}
 #sec6_list{width:65%;}
@@ -746,7 +748,7 @@ button{background-color: none;}
   width:100%;
   height:auto;
   position: absolute;
-  top:4800px;
+  top:5100px;
   line-height:2;
   padding:18px 0;
   color:#fff;
