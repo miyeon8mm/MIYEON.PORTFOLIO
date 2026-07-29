@@ -422,8 +422,8 @@ header{
 #right-bottom{
   width:100%;
   position: absolute;
-  top:65%;
-  font-size:24px;
+  top:68%;
+  font-size:2rem;
   font-family: 'Cafe24ShiningStar';
 }
 #right-bottom > h3{margin-bottom:10px;}
@@ -1022,10 +1022,10 @@ button{background-color: none;}
   }
   .swiper-slide .text{padding:12px 20px 0;}
   .overlay h3, .overlay-1 h3{font-size:16px; margin-bottom:0;}
-  .overlay p, .overlay-1 p{font-size:12px; margin-top:5px;}
-  .overlay span, .overlay-1 span {font-size:12px; margin-top:8px;}
+  .overlay p, .overlay-1 p{font-size:12px; margin-top:10px;}
+  .overlay span, .overlay-1 span, .use_tool{display:none;}
   .overlay .text button , .overlay-1 .text button{
-  margin: 8px auto 0;
+  margin: 15px auto 0;
   padding: 5px 10px;
   font-size:14px;
 }
