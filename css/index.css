@@ -354,7 +354,7 @@ header{
   position: absolute;
   top:200px;
 }
-
+#sec2-wrap h5{display:none;}
 #left{
   width:35%;
   height:100%;
@@ -920,6 +920,15 @@ button{background-color: none;}
     font-size:2.8rem;
     width:146px;
   }
+  #sec2-wrap h5{
+    position:relative;
+    top:35px;
+    left:50%;
+    transform:translateX(-50%);
+    font-family: 'Cafe24ShiningStar';
+    font-size:1.2rem;
+    display:block;
+  }
   #skill_list img{
     width:30px; 
     height:auto;
@@ -931,6 +940,7 @@ button{background-color: none;}
   }
   #left{
     /* width:45%; */
+    top:50px;
     width:100%;
   }
   #left_top{
@@ -940,17 +950,18 @@ button{background-color: none;}
     border-bottom: none;
   }
   #left_bottom{
-    width:50%;
+    width:100%;
     border-top:1px solid#000;
   }
   .left-list{font-size:12px;}
  
   #right {
+    top:50px;
     width:50%;
     /* height:75%; */
   }
   #right_top{font-size:14px;}
-   #right-bottom span{font-size:1.25rem;}
+   #right-bottom{display:none;}
 
   /* section3 */
   #work{top:970px;}
