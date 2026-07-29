@@ -418,6 +418,7 @@ header{
 #right_top{
   line-height:3;
 }
+
 #right-bottom{
   width:100%;
   position: absolute;
@@ -1023,6 +1024,11 @@ button{background-color: none;}
   .overlay h3, .overlay-1 h3{font-size:16px; margin-bottom:8px;}
   .overlay p, .overlay-1 p{font-size:12px; margin-top:8px;}
   .overlay span, .overlay-1 span {font-size:12px;}
+  .overlay .text button , .overlay-1 .text button{
+  margin: 8px auto 0;
+  padding: 5px 10px;
+  font-size:14px;
+}
   .swiper-button-next,.swiper-button-prev{
     color:#333333 !important;
     width:60px !important;
@@ -1030,6 +1036,7 @@ button{background-color: none;}
   }
 
 
+  /* section5 */
   #section5_wrap{top:0px;}
   #sec5_list{
     flex-direction:column;
