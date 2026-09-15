@@ -103,6 +103,25 @@ $("#header_list div").eq(4).click(function(){
     $(".pop-up-02").fadeOut();
     $("body").removeClass("stop-scroll");
   })
+//section4_popup
+$("#disney").click(function(){
+    $("#disney_popup").show();
+})
+$("#disney_popup .x").click(function(){
+    $("#disney_popup").hide();
+  })
+$("#rockfish").click(function(){
+    $("#rockfish_popup").show();
+})
+$("#rockfish_popup .x").click(function(){
+    $("#rockfish_popup").hide();
+})
+$("#culture").click(function(){
+    $("#culture_popup").show();
+})
+$("#culture_popup .x").click(function(){
+    $("#culture_popup").hide();
+})
 
   // section5
   $("#sec5_list > div").eq(0).click(function(){
