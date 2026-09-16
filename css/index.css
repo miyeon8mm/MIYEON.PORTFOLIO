@@ -612,11 +612,8 @@ header{
   width:100%;
   height:100vh; 
   background-color: #f8f8f7;
-  position:absolute;
-  top:2680px;
+  position:fixed;
   z-index:100;
-  left:50%;
-  transform:translateX(-50%);
   display:none;
 }
 .x{
@@ -1101,9 +1098,9 @@ button{background-color: none;}
     height:60px !important;
 }
 
-.sec04_pop_up{
+/* .sec04_pop_up{
   top:1320px;
-}
+} */
 .x {font-size:24px; top:5px; right:10px;}
 #sec4-1 > ul{
   flex-direction: column;
