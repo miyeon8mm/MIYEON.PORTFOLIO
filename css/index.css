@@ -609,13 +609,12 @@ header{
 }
 
 .sec04_pop_up{
-  width:100%;
-  height:100vh; 
-  background-color: #f8f8f7;
-  position:fixed;
-  top:0;
-  left:0;
-  z-index:100;
+  width:100% !important;
+  height:100vh!important; 
+  background-color: #f8f8f7 !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1000 !important;
   display:none;
 }
 .x{
@@ -628,12 +627,14 @@ header{
   border:none;
   cursor: pointer;
 }
-#sec4-1{
+.sec4-1{
+  height:100%;
   height:100%;
   display:flex;
   align-items:center;
 }
-#sec4-1 > ul{
+.sec4-1 > ul{
+  width:100%;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -1104,7 +1105,7 @@ button{background-color: none;}
   top:1320px;
 } */
 .x {font-size:24px; top:5px; right:10px;}
-#sec4-1 > ul{
+.sec4-1 > ul{
   flex-direction: column;
 }
 .desktop_display{width:100%; height:auto;}
