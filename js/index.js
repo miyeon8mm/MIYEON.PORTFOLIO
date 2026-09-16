@@ -110,21 +110,18 @@ $("#disney").click(function(){
 })
 $("#disney_popup .x").click(function(){
     $("#disney_popup").hide();
-      $("body").css("overflow", "");
   })
 $("#rockfish").click(function(){
     $("#rockfish_popup").show();
 })
 $("#rockfish_popup .x").click(function(){
     $("#rockfish_popup").hide();
-      $("body").css("overflow", "");
 })
 $("#culture").click(function(){
     $("#culture_popup").show();
 })
 $("#culture_popup .x").click(function(){
     $("#culture_popup").hide();
-      $("body").css("overflow", "");
 })
 
   // section5
