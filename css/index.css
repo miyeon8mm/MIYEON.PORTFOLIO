@@ -613,6 +613,8 @@ header{
   height:100vh; 
   background-color: #f8f8f7;
   position:fixed;
+  top:0;
+  left:0;
   z-index:100;
   display:none;
 }
