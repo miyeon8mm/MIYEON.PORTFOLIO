@@ -1102,7 +1102,7 @@ button{background-color: none;}
 }
 
 .sec04_pop_up{
-  top:1300px;
+  top:1330px;
 }
 .x {font-size:20px; top:5px; right:10px;}
 #sec4-1 > ul{
@@ -1110,6 +1110,7 @@ button{background-color: none;}
 }
 .desktop_display{width:100%; height:auto;}
 .sec_cont {width:95%;}
+.sec4_sub_title{font-size:1.6rem;}
 #site{font-size:1.2rem; color:inherit;}
 
 
