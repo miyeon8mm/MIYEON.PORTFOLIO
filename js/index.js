@@ -106,18 +106,21 @@ $("#header_list div").eq(4).click(function(){
 //section4_popup
 $("#disney").click(function(){
     $("#disney_popup").show();
+    $("body").css("overflow", "hidden");
 })
 $("#disney_popup .x").click(function(){
     $("#disney_popup").hide();
   })
 $("#rockfish").click(function(){
     $("#rockfish_popup").show();
+    $("body").css("overflow", "hidden");
 })
 $("#rockfish_popup .x").click(function(){
     $("#rockfish_popup").hide();
 })
 $("#culture").click(function(){
     $("#culture_popup").show();
+    $("body").css("overflow", "hidden");
 })
 $("#culture_popup .x").click(function(){
     $("#culture_popup").hide();

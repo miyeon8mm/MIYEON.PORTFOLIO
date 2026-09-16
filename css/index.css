@@ -613,7 +613,7 @@ header{
   height:100vh; 
   background-color: #f8f8f7;
   position:absolute;
-  top:2650px;
+  top:2680px;
   z-index:100;
   left:50%;
   transform:translateX(-50%);
@@ -1110,7 +1110,7 @@ button{background-color: none;}
 }
 .desktop_display{width:100%; height:auto;}
 .sec_cont {width:95%;}
-#site{font-size:1.2rem;}
+#site{font-size:1.2rem; color:inherit;}
 
 
 
