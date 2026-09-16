@@ -609,7 +609,7 @@ header{
 }
 
 .sec04_pop_up{
-  width:98%;
+  width:100%;
   height:100vh; 
   background-color: #f8f8f7;
   position:absolute;
@@ -629,13 +629,18 @@ header{
   border:none;
   cursor: pointer;
 }
+#sec4-1{
+  height:100%;
+  display:flex;
+  align-items:center;
+}
 #sec4-1 > ul{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
+  
   color:#000;
 }
-/* #sec4-1 > ul li{margin-bottom:10px;} */
 
 .desktop_display{
   width:45%;
@@ -668,11 +673,12 @@ header{
 .sec_cont > ul li span{
   display:block; 
   font-size:1.08rem;
+  color:#555;
 }
 .design{
   border-bottom:1px solid #dfdfdf;
   border-top:1px solid #dfdfdf;
-
+  font-size:1.08rem;
 }
 #site{
   background-color:inherit;
@@ -681,31 +687,6 @@ header{
   font-size:1.4rem;
   padding-top:15px;
 }
-
-.figma_cont{
-  display:flex;
-  justify-content: space-between;
-  padding:0 50px;
-  align-items:center;
-}
-
-.figma_cont li span{font-size:2rem;}
-.figma_img{
-  width:65%;
-}
-.figma_img ul{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-}
-.figma_img ul li{
-  width:calc(100% / 3);
-  margin-bottom:10px;
-}
-.figma_img ul li img{
-  width:100%;
-}
-
 
 
 /* section5 */
@@ -1119,6 +1100,18 @@ button{background-color: none;}
     width:60px !important;
     height:60px !important;
 }
+
+.sec04_pop_up{
+  top:1300px;
+}
+.x {font-size:20px; top:5px; right:10px;}
+#sec4-1 > ul{
+  flex-direction: column;
+}
+.desktop_display{width:100%; height:auto;}
+.sec_cont {width:95%;}
+#site{font-size:1.2rem;}
+
 
 
 
