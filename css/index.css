@@ -684,7 +684,7 @@ header{
   background-color:inherit;
   border:none;
   border-bottom:2px solid #000; 
-  font-size:1.4rem;
+  font-size:1.1rem;
   padding-top:15px;
 }
 
@@ -1113,6 +1113,7 @@ button{background-color: none;}
 .sec_cont {width:100%; padding:0 18px;}
 .sec4_title{margin-bottom:12px;}
 .sec4_sub_title{font-size:1.7rem;}
+.design{font-size:1.03rem;}
 #site{font-size:1.2rem; color:inherit; margin-bottom:10px;}
 .sec_cont > ul li span{font-size:1rem;}
 
