@@ -1102,7 +1102,7 @@ button{background-color: none;}
 }
 
 .sec04_pop_up{
-    height: auto;
+    height: 100dvh;
 }
 .x {font-size:24px; top:5px; right:10px;}
 .sec4-1 > ul{
