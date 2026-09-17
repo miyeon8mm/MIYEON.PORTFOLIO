@@ -1102,7 +1102,7 @@ button{background-color: none;}
 }
 
 .sec04_pop_up{
-    height: 100dvh;
+    height: fit-content;
 }
 .x {font-size:24px; top:5px; right:10px;}
 .sec4-1 > ul{
@@ -1111,9 +1111,9 @@ button{background-color: none;}
 .sec4-1{align-items:flex-start;}
 .desktop_display{width:98%; height:auto; margin:0 auto;}
 .sec_cont {width:100%; padding:0 18px;}
-.sec4_title{margin-bottom:10px;}
+.sec4_title{margin-bottom:12px;}
 .sec4_sub_title{font-size:1.7rem;}
-#site{font-size:1.2rem; color:inherit;}
+#site{font-size:1.2rem; color:inherit; margin-bottom:10px;}
 .sec_cont > ul li span{font-size:1rem;}
 
 
