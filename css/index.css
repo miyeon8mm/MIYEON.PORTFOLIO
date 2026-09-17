@@ -661,7 +661,7 @@ header{
   font-size:1rem;
   display:inline-block;
   margin-bottom:19px;
-   border-bottom:1px solid #dfdfdf;
+  border-bottom:1px solid #dfdfdf;
 }
 .sec4_sub_title{ 
   font-size:2em;
@@ -1110,7 +1110,8 @@ button{background-color: none;}
 }
 .sec4-1{align-items:flex-start;}
 .desktop_display{width:100%; height:auto;}
-.sec_cont {width:100%;}
+.sec_cont {width:100%; font-size:1.2rem;}
+.sec4_title{margin-bottom:10px;}
 .sec4_sub_title{font-size:1.7rem;}
 #site{font-size:1.2rem; color:inherit;}
 
